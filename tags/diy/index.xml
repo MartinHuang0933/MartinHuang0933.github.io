@@ -5,21 +5,7 @@
     <link>https://martinhuang0933.github.io/tags/diy/</link>
     <description>Recent content in Diy on rrrrrrrrrrrBookworm - Personal Blog Templaterrrr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Feb 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/diy/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to make toys from old Olarpaper</title>
-      <link>https://martinhuang0933.github.io/blog/post-9/</link>
-      <pubDate>Sat, 06 Feb 2021 16:56:47 +0600</pubDate>
-      
-      <guid>https://martinhuang0933.github.io/blog/post-9/</guid>
-      <description>iOS 資訊安全加固方案 - 程式碼混淆(SwiftShield)  最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
-資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
-為什麼要做程式碼混淆？ 最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
-資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
-.
-如何做到程式碼混淆？ 市面上有許多的混淆工具，有收費的也有開源的，如果只是想試點水溫會建議用開源的工具玩玩看。但如果專案有時程壓力，可以試試付費的工具，畢竟省時省力 😂。</description>
-    </item>
-    
+    <lastBuildDate>Fri, 05 Feb 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/diy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to make toys from old Olarpaper</title>
       <link>https://martinhuang0933.github.io/blog/post-8/</link>

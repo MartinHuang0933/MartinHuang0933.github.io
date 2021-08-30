@@ -5,21 +5,7 @@
     <link>https://martinhuang0933.github.io/</link>
     <description>Recent content on rrrrrrrrrrrBookworm - Personal Blog Templaterrrr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 06 Feb 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to make toys from old Olarpaper</title>
-      <link>https://martinhuang0933.github.io/blog/post-9/</link>
-      <pubDate>Sat, 06 Feb 2021 16:56:47 +0600</pubDate>
-      
-      <guid>https://martinhuang0933.github.io/blog/post-9/</guid>
-      <description>iOS 資訊安全加固方案 - 程式碼混淆(SwiftShield)  最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
-資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
-為什麼要做程式碼混淆？ 最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
-資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
-.
-如何做到程式碼混淆？ 市面上有許多的混淆工具，有收費的也有開源的，如果只是想試點水溫會建議用開源的工具玩玩看。但如果專案有時程壓力，可以試試付費的工具，畢竟省時省力 😂。</description>
-    </item>
-    
+    <lastBuildDate>Fri, 05 Feb 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to make toys from old Olarpaper</title>
       <link>https://martinhuang0933.github.io/blog/post-8/</link>
@@ -108,6 +94,22 @@
       
       <guid>https://martinhuang0933.github.io/blog/post-1/</guid>
       <description>Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.</description>
+    </item>
+    
+    <item>
+      <title>iOS 資訊安全加固方案 - 程式碼混淆(SwiftShield)</title>
+      <link>https://martinhuang0933.github.io/blog/post-9/</link>
+      <pubDate>Thu, 09 Apr 2020 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/post-9/</guid>
+      <description>最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
+資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
+為什麼要做程式碼混淆？ 最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
+資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
+.
+如何做到程式碼混淆？ 市面上有許多的混淆工具，有收費的也有開源的，如果只是想試點水溫會建議用開源的工具玩玩看。但如果專案有時程壓力，可以試試付費的工具，畢竟省時省力 😂。
+這邊我列舉出幾個比較常見的開源混淆工具：
+(1) 「rockbruno/SwiftShield」:  這是我比較推薦的一個，效能不錯、評價高、重點是還有在維護。 手動模式（Objective-C、Swift）：採後綴混淆，簡單易用，缺點是有特定後綴的才會混淆，不適合已開發的專案。 自動模式（Swift）：全局混淆，也可以指定特定資料夾不混淆，缺點是有些語法混淆後會出錯，需要手動修復或是修改原本的程式寫法，但錯誤通常不多。  (2) 「LennonChin/Code-Confuse-Plugin」:  僅混淆 Objective-C 項目(.</description>
     </item>
     
     <item>
