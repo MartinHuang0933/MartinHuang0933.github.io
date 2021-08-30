@@ -5,7 +5,26 @@
     <link>https://martinhuang0933.github.io/</link>
     <description>Recent content on rrrrrrrrrrrBookworm - Personal Blog Templaterrrr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 05 Feb 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jul 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自我介紹很尷尬？萬用公式讓人留下好印象</title>
+      <link>https://martinhuang0933.github.io/blog/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9%E5%BE%88%E5%B0%B7%E5%B0%AC%E8%90%AC%E7%94%A8%E5%85%AC%E5%BC%8F%E8%AE%93%E4%BA%BA%E7%95%99%E4%B8%8B%E5%A5%BD%E5%8D%B0%E8%B1%A1/</link>
+      <pubDate>Wed, 21 Jul 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9%E5%BE%88%E5%B0%B7%E5%B0%AC%E8%90%AC%E7%94%A8%E5%85%AC%E5%BC%8F%E8%AE%93%E4%BA%BA%E7%95%99%E4%B8%8B%E5%A5%BD%E5%8D%B0%E8%B1%A1/</guid>
+      <description>近期為求職旺季，很多應屆的畢業生都逐漸的投入職場。
+許多優秀的同學因為沒有入職的經驗，往往不知道第一天會做哪些事情，也不知道要準備些什麼。
+那以產品人自身的經驗來說，除了報到、認識公司環境以外，最重要的就是自我介紹，這是個可以快速建立良好第一印象的機會，為你在職場的人際關係打下基礎。
+教你自我介紹的萬用公式，讓人留下深刻印象：
+我是誰 + 為什麼來這裡 + 我能帶來什麼價值
+📌 我是誰： 這個除了你的姓名以外，可以說一說你有做過哪些事蹟，例如我在大學時事擔任社團社長，或是我對於健身有些研究常指導別人等等。
+這個環節可以透過簡單的背景故事讓大家初步認識你。
+📌 我為什麼來這裡： 如果是入職，可以說因為喜歡公司的哪個部分所以對於公司很有憧憬，同時也想向各位前輩們學習專業知識、領域經驗等。
+如果是參加社交活動，可以說我在哪裡得知這個活動，來這裡是想跟大家交流什麼話題等。
+這個環節也是讓大家初步認識你，可以簡單敘述，但下一點才是比較重要的。
+📌 我能帶來什麼價值： 這一點比較關鍵，如果可以與「我是誰」呼應的話是最好的。</description>
+    </item>
+    
     <item>
       <title>How to make toys from old Olarpaper</title>
       <link>https://martinhuang0933.github.io/blog/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%AA%94%E6%A1%88%E5%A4%BE/post-8/</link>
@@ -106,25 +125,6 @@
 什麼情況下會有差異？ 你可以先記得，大部分的情況都會使用copy。
 而 copy 與 strong 的差別，在於 copy 是儲存「值」，strong 是儲存「記憶體位址」。
 舉個例子 // .h file @property (strong,nonatomic) NSString *strongStr; @property (copy, nonatomic) NSString *copyStr; // .</description>
-    </item>
-    
-    <item>
-      <title>自我介紹很尷尬？萬用公式讓人留下好印象</title>
-      <link>https://martinhuang0933.github.io/blog/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9%E5%BE%88%E5%B0%B7%E5%B0%AC%E8%90%AC%E7%94%A8%E5%85%AC%E5%BC%8F%E8%AE%93%E4%BA%BA%E7%95%99%E4%B8%8B%E5%A5%BD%E5%8D%B0%E8%B1%A1/</link>
-      <pubDate>Mon, 28 Dec 2020 16:56:47 +0600</pubDate>
-      
-      <guid>https://martinhuang0933.github.io/blog/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9%E5%BE%88%E5%B0%B7%E5%B0%AC%E8%90%AC%E7%94%A8%E5%85%AC%E5%BC%8F%E8%AE%93%E4%BA%BA%E7%95%99%E4%B8%8B%E5%A5%BD%E5%8D%B0%E8%B1%A1/</guid>
-      <description>近期為求職旺季，很多應屆的畢業生都逐漸的投入職場。
-許多優秀的同學因為沒有入職的經驗，往往不知道第一天會做哪些事情，也不知道要準備些什麼。
-那以產品人自身的經驗來說，除了報到、認識公司環境以外，最重要的就是自我介紹，這是個可以快速建立良好第一印象的機會，為你在職場的人際關係打下基礎。
-教你自我介紹的萬用公式，讓人留下深刻印象：
-我是誰 + 為什麼來這裡 + 我能帶來什麼價值
-📌 我是誰： 這個除了你的姓名以外，可以說一說你有做過哪些事蹟，例如我在大學時事擔任社團社長，或是我對於健身有些研究常指導別人等等。
-這個環節可以透過簡單的背景故事讓大家初步認識你。
-📌 我為什麼來這裡： 如果是入職，可以說因為喜歡公司的哪個部分所以對於公司很有憧憬，同時也想向各位前輩們學習專業知識、領域經驗等。
-如果是參加社交活動，可以說我在哪裡得知這個活動，來這裡是想跟大家交流什麼話題等。
-這個環節也是讓大家初步認識你，可以簡單敘述，但下一點才是比較重要的。
-📌 我能帶來什麼價值： 這一點比較關鍵，如果可以與「我是誰」呼應的話是最好的。</description>
     </item>
     
     <item>
