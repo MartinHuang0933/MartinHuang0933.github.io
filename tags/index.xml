@@ -1,63 +1,89 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Introduction</title>
-    <link>http://example.com/tags/</link>
-    <description>Recent content in Tags on Introduction</description>
+    <title>Tags on Bookworm - Personal Blog Template</title>
+    <link>https://demo.gethugothemes.com/bookworm-light/tags/</link>
+    <description>Recent content in Tags on Bookworm - Personal Blog Template</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jul 2020 02:04:06 -0500</lastBuildDate><atom:link href="http://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://demo.gethugothemes.com/bookworm-light/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>code</title>
-      <link>http://example.com/tags/code/</link>
-      <pubDate>Sat, 25 Jul 2020 02:04:06 -0500</pubDate>
+      <title>Diy</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/diy/</link>
+      <pubDate>Fri, 05 Feb 2021 16:56:47 +0600</pubDate>
       
-      <guid>http://example.com/tags/code/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/diy/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>blog</title>
-      <link>http://example.com/tags/blog/</link>
-      <pubDate>Thu, 30 May 2019 20:18:53 -0500</pubDate>
+      <title>Toy</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/toy/</link>
+      <pubDate>Fri, 05 Feb 2021 16:56:47 +0600</pubDate>
       
-      <guid>http://example.com/tags/blog/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/toy/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ipsum</title>
-      <link>http://example.com/tags/ipsum/</link>
-      <pubDate>Mon, 13 Nov 2017 11:58:39 -0500</pubDate>
+      <title>Photography</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/photography/</link>
+      <pubDate>Thu, 04 Feb 2021 16:56:47 +0600</pubDate>
       
-      <guid>http://example.com/tags/ipsum/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/photography/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>words</title>
-      <link>http://example.com/tags/words/</link>
-      <pubDate>Mon, 13 Nov 2017 11:58:39 -0500</pubDate>
+      <title>Alarm</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/alarm/</link>
+      <pubDate>Wed, 03 Feb 2021 16:56:47 +0600</pubDate>
       
-      <guid>http://example.com/tags/words/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/alarm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>coffee</title>
-      <link>http://example.com/tags/coffee/</link>
-      <pubDate>Wed, 01 Nov 2017 12:04:16 -0500</pubDate>
+      <title>Clock</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/clock/</link>
+      <pubDate>Wed, 03 Feb 2021 16:56:47 +0600</pubDate>
       
-      <guid>http://example.com/tags/coffee/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/clock/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>images</title>
-      <link>http://example.com/tags/images/</link>
-      <pubDate>Wed, 01 Nov 2017 12:04:16 -0500</pubDate>
+      <title>Balloon</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/balloon/</link>
+      <pubDate>Tue, 02 Feb 2021 16:56:47 +0600</pubDate>
       
-      <guid>http://example.com/tags/images/</guid>
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/balloon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gas</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/gas/</link>
+      <pubDate>Tue, 02 Feb 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/gas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Food</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/food/</link>
+      <pubDate>Mon, 25 Jan 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gold</title>
+      <link>https://demo.gethugothemes.com/bookworm-light/tags/gold/</link>
+      <pubDate>Mon, 25 Jan 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/bookworm-light/tags/gold/</guid>
       <description></description>
     </item>
     
