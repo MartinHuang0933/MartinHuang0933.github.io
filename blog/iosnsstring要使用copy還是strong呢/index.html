@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>iOS | NSString 要使用 copy 還是 strong 呢？</title>
+
+  <meta name="author" content="Themefisher">
+  <meta name="description" content=" meta description ">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://martinhuang0933.github.io/images/favicon.png" type="image/x-icon">
+
+  <!-- CSS Plugins -->
+  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&amp;display=swap">
+
+
+
+
+<link rel="stylesheet" href="https://martinhuang0933.github.io/css/vendor.min.f38e7c7e6ab34c94774fb608f1bb6b5912854002ca41fa9c63fd334fcddbd97e26be4783c0f6fd40b8fc78776c7169352bbc43ccfa6f56de22009e059d7401e1.css" integrity="sha512-8458fmqzTJR3T7YI8btrWRKFQALKQfqcY/0zT83b2X4mvkeDwPb9QLj8eHdscWk1K7xDzPpvVt4iAJ4FnXQB4Q==" media="screen">
+
+</head>
+
+<body>
+  
+  <div class="header-height-fix"></div>
+<header class="header-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <a class="navbar-brand font-weight-bold mr-0" href="https://martinhuang0933.github.io/">
+            
+            <img loading="lazy" src="https://martinhuang0933.github.io/images/logo.png" alt="rrrrrrrrrrrBookworm - Personal Blog Templaterrrr" height="35px">
+            
+          </a>
+
+          
+          <button class="search-toggle d-inline-block d-lg-none ml-auto mr-3" data-toggle="search" aria-label="Search Toggle">
+            <i class="las la-search"></i>
+          </button>
+          
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHeader" aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="d-inline lab la-buromobelexperte"></i>
+            <i class="d-none las la-times"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navHeader">
+            <ul class="navbar-nav mx-auto">
+
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="https://martinhuang0933.github.io/">Home</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="https://martinhuang0933.github.io/about/">About</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="https://martinhuang0933.github.io/contact/">Contact</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-block " href="#" role="button" data-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/author/">Author</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/tags/">Tags</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/categories/">Category</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/elements/">Elements</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/privacy/">Privacy</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/terms-conditions/">Terms &amp; Conditions</a></li>
+                  
+                </ul>
+              </li>
+              
+              
+            </ul>
+            
+            
+            <div class="navbar-right d-none d-lg-inline-block">
+              <ul class="social-links list-unstyled list-inline">
+                <li class="list-inline-item ml-4 d-none d-lg-inline-block">
+                  <button class="search-toggle" data-toggle="search" aria-label="Search Toggle">
+                    <i class="las la-search"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="search-block">
+  <div data-toggle="search-close">
+    <i class="las la-times text-primary"></i>
+  </div>
+  <form action="/search">
+    <input id="search-query" name="s" type="search" placeholder="Type words &amp; hit enter" class="text-center" aria-label="search-query">
+  </form>
+</div>
+
+  
+  
+
+
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="text-center mb-5">
+          <h3 class="h2 mb-4 post-title">iOS | NSString 要使用 copy 還是 strong 呢？</h3>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>28 December 2020</span>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="mb-5 text-center">
+          <img loading="lazy" class="img-fluid rounded" src="https://i.imgur.com/Xa73TNl.png" alt="Image not Found">
+        </div>
+        
+
+        <div class="content">
+          <p>最近在複習 iOS 面試題系列，看到這一題想起幾年前剛接觸 Objective-C ，剛開始觀念還沒有建立起來，也曾經因為這個屬性花了不少時間Debug，雖然現在觀念已經搞懂了，但還是趁這個機會複習筆記一下。</p>
+<h2 id="什麼情況下會有差異">什麼情況下會有差異？</h2>
+<p>你可以先記得，大部分的情況都會使用copy。</p>
+<p>而 copy 與 strong 的差別，在於 copy 是儲存「值」，strong 是儲存「記憶體位址」。</p>
+<h2 id="舉個例子">舉個例子</h2>
+<pre><code class="language-objectivec=" data-lang="objectivec=">// .h file
+@property (strong,nonatomic) NSString *strongStr;
+@property (copy, nonatomic)  NSString *copyStr;
+</code></pre><pre><code class="language-objectivec=" data-lang="objectivec=">// .m file
+NSMutableString *mutableStr = [NSMutableString stringWithFormat:@&quot;abc&quot;];
+
+// 將mutableStr賦值給retainStr、copyStr
+self.strongStr = mutableStr;
+self.copyStr = mutableStr;
+
+// 將 mutableStr 更改為 xyz
+[mutableStr appendString:@&quot;xyz&quot;];
+
+// 印出三個字串的值
+NSLog(@&quot;mutableStr = %@&quot;,mutableStr);
+NSLog(@&quot;strongStr = %@&quot;,self.strongStr);
+NSLog(@&quot;copyStr = %@&quot;,self.copyStr);
+
+// 輸出值
+// mutableStr = xyz
+// strongStr = xyz
+// copyStr = abc
+
+</code></pre><p>可以發現，此時 copy 屬性字串並不會因為賦值來源而更改值，反而是strong屬性的字串隨著來源而改變了。<br>
+這是因為 copy 屬性是對於來源做了深拷貝，是將 mutableStr 的數值複製到了 copyStr 上；而 strong 屬性是指向來源的記憶體位址，所以當原本的 mutableStr 改變時，strongStr 也會跟著改變。</p>
+<hr>
+<p>接著我們在來看一下這三個字串的記憶體位址</p>
+<pre><code class="language-objectivec=" data-lang="objectivec=">// 印出三個字串的記憶體位址
+mutableStr = abcxyz
+StrStrong = abcxyz
+StrCopy = abc
+
+// 輸出記憶體位址
+// mutableStr = 0x6000030ee520
+// StrStrong = 0x6000030ee520
+// StrCopy = 0xc09e09c05a166394
+</code></pre><p>這時候我們可以看到 mutableStr 與 StrStrong 的記憶體位址是相同的，代表他們兩個儲存值的地方是一樣的，所以才會造成改變 mutableStr 後 StrStrong 也跟著更改的情況。</p>
+<h2 id="小結">小結</h2>
+<p>比較簡單的記憶法就是 NSString 用 Copy 就好，因為實務上也很少會使用    Strong 屬性的情境。<br>
+雖然現在 Objective-C 比較少人在用了，不過有時候面試還是會考到類似的觀念題，所以邊複習邊整理文章，希望對開發者有些幫助。</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/swift">Swift</a></li>
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/objective-c">Objective-C</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fiosnsstring%25E8%25A6%2581%25E4%25BD%25BF%25E7%2594%25A8copy%25E9%2582%2584%25E6%2598%25AFstrong%25E5%2591%25A2%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=iOS%20%7c%20NSString%20%e8%a6%81%e4%bd%bf%e7%94%a8%20copy%20%e9%82%84%e6%98%af%20strong%20%e5%91%a2%ef%bc%9f&amp;url=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fiosnsstring%25E8%25A6%2581%25E4%25BD%25BF%25E7%2594%25A8copy%25E9%2582%2584%25E6%2598%25AFstrong%25E5%2591%25A2%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fiosnsstring%25E8%25A6%2581%25E4%25BD%25BF%25E7%2594%25A8copy%25E9%2582%2584%25E6%2598%25AFstrong%25E5%2591%25A2%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=iOS%20%7c%20NSString%20%e8%a6%81%e4%bd%bf%e7%94%a8%20copy%20%e9%82%84%e6%98%af%20strong%20%e5%91%a2%ef%bc%9f&amp;body=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fiosnsstring%25E8%25A6%2581%25E4%25BD%25BF%25E7%2594%25A8copy%25E9%2582%2584%25E6%2598%25AFstrong%25E5%2591%25A2%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=iOS%20%7c%20NSString%20%e8%a6%81%e4%bd%bf%e7%94%a8%20copy%20%e9%82%84%e6%98%af%20strong%20%e5%91%a2%ef%bc%9f%20https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fiosnsstring%25E8%25A6%2581%25E4%25BD%25BF%25E7%2594%25A8copy%25E9%2582%2584%25E6%2598%25AFstrong%25E5%2591%25A2%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="https://martinhuang0933.github.io/blog/ios-%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%8A%A0%E5%9B%BA%E6%96%B9%E6%A1%88-%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%B7%B7%E6%B7%86swiftshield/">
+    <img loading="lazy" class="w-100 rounded" src="https://i.imgur.com/Xa73TNl.png" alt="iOS 資訊安全加固方案 - 程式碼混淆(SwiftShield)">
+  </a>
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>09 Apr, 2020</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/swift">Swift</a></li>
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/security">Security</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="https://martinhuang0933.github.io/blog/ios-%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%8A%A0%E5%9B%BA%E6%96%B9%E6%A1%88-%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%B7%B7%E6%B7%86swiftshield/">iOS 資訊安全加固方案 - 程式碼混淆(SwiftShield)</a>
+    </h3>
+    <p>最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
+資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你 …</p>
+
+    
+  </div>
+</article>
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <a href="https://martinhuang0933.github.io/blog/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%AA%94%E6%A1%88%E5%A4%BE/post-8/">
+    <img loading="lazy" class="w-100 rounded" src="https://martinhuang0933.github.io/images/post/01.jpg" alt="How to make toys from old Olarpaper">
+  </a>
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        
+        <a href="https://martinhuang0933.github.io/author/lubana-era/" class="card-meta-author">
+          
+          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Lubana Era">
+          
+          <span>Lubana Era</span>
+        </a>
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>05 Feb, 2021</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/diy">Diy</a></li>
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/toy">Toy</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="https://martinhuang0933.github.io/blog/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%AA%94%E6%A1%88%E5%A4%BE/post-8/">How to make toys from old Olarpaper</a>
+    </h3>
+    <p>Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum …</p>
+
+    
+  </div>
+</article>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-5">
+        
+        
+        <div class="newsletter-block font-primary">
+          <h3 class="h4 mb-4 font-weight-700 text-center">Subscribe for our monthly newsletter.</h3>
+          <form class="px-0 px-sm-3 px-md-5" action="https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;amp;id=a0a2c6d074" method="post" name="mailchimp_form_name" target="_blank">
+            <div class="input-group">
+              <input form="subscription" type="text" class="form-control" placeholder="Enter your email" aria-label="Subscription" required autocomplete="new-email">
+              <div class="input-group-append">
+                <button type="submit" name="subscription" class="input-group-text" aria-label="Subscription Button"><i class="icon las la-paper-plane"></i></button>
+              </div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+            </div>
+          </form>
+        </div>
+        
+        
+      </div>
+      <div class="col-lg-12 text-center mt-5">
+        <ul class="list-inline footer-menu mb-4">
+          
+          <li class="list-inline-item mx-3"><a href="https://martinhuang0933.github.io/about/">About</a></li>
+          
+          <li class="list-inline-item mx-3"><a href="https://martinhuang0933.github.io/author/">Authors</a></li>
+          
+          <li class="list-inline-item mx-3"><a href="https://martinhuang0933.github.io/privacy/">Privacy</a></li>
+          
+          <li class="list-inline-item mx-3"><a href="https://martinhuang0933.github.io/terms-conditions/">Terms &amp; Conditions</a></li>
+          
+        </ul>
+        <ul class="social-links icon-box list-unstyled list-inline font-weight-500 mb-3">
+          
+          <li class="list-inline-item text-center"><a href="https://www.facebook.com/" aria-label="social-icon">
+            <i class="lab lab la-facebook-f"></i>
+          </a></li>
+          
+          <li class="list-inline-item text-center"><a href="https://www.twitter.com/" aria-label="social-icon">
+            <i class="lab lab la-twitter"></i>
+          </a></li>
+          
+          <li class="list-inline-item text-center"><a href="https://www.instagram.com/" aria-label="social-icon">
+            <i class="lab lab la-instagram"></i>
+          </a></li>
+          
+          <li class="list-inline-item text-center"><a href="https://www.linkedin.com/" aria-label="social-icon">
+            <i class="lab lab la-linkedin-in"></i>
+          </a></li>
+          
+        </ul>
+        
+        <p class="mb-0 font-weight-500 copyright-text content">Designed &amp; Developed By <a href="https://gethugothemes.com/">Gethugothemes</a></p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+<script data-turbolinks-suppress-warning src="/js/vendor.min.104c16bb588dd60f4bc0cbb9828dcf214eb0a6775f69f74f025b75dc5aac73eb47da26aef00c8f4e3d7a85099a8054c195d03d63aa88d1b4213a47274755994e.js" integrity="sha512-EEwWu1iN1g9LwMu5go3PIU6wpndfafdPAlt13Fqsc&#43;tH2iau8AyPTj16hQmagFTBldA9Y6qI0bQhOkcnR1WZTg=="></script>
+
+
+
+</body>
+
+</html>
