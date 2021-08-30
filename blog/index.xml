@@ -1,81 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Bookworm - Personal Blog Template</title>
-    <link>https://demo.gethugothemes.com/bookworm-light/blog/</link>
-    <description>Recent content in Blog on Bookworm - Personal Blog Template</description>
+    <title>Blog on Introduction</title>
+    <link>http://example.com/blog/</link>
+    <description>Recent content in Blog on Introduction</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 05 Feb 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://demo.gethugothemes.com/bookworm-light/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Jul 2020 02:04:06 -0500</lastBuildDate><atom:link href="http://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to make toys from old Olarpaper</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/post-8/</link>
-      <pubDate>Fri, 05 Feb 2021 16:56:47 +0600</pubDate>
+      <title>Theme Features</title>
+      <link>http://example.com/blog/configuration/</link>
+      <pubDate>Sat, 25 Jul 2020 02:04:06 -0500</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/post-8/</guid>
-      <description>Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit.</description>
+      <guid>http://example.com/blog/configuration/</guid>
+      <description>Here are some helpful tips for setting up this theme.
+Configuration Most of what you&amp;rsquo;ll want to configure is demonstrated in the exampleSite config.toml. This is Hugo&amp;rsquo;s configuration file. You can copy the config.toml in the exampleSite/ to your site root get started.
+Here are all the options included in the configuration file for this example site! baseURL = &amp;#34;http://example.com/&amp;#34; # Your domain name. Must end with &amp;#34;/&amp;#34; theme = &amp;#34;introduction&amp;#34; DefaultContentLanguage = &amp;#34;en&amp;#34; # Default language for multilingual sites # disqusshortname = &amp;#34;&amp;#34; # https://gohugo.</description>
     </item>
     
     <item>
-      <title>What you need to know about Photography</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/post-7/</link>
-      <pubDate>Thu, 04 Feb 2021 16:56:47 +0600</pubDate>
+      <title>**Long** Form Post!</title>
+      <link>http://example.com/blog/long-form-post/</link>
+      <pubDate>Thu, 30 May 2019 20:18:53 -0500</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/post-7/</guid>
-      <description>Photography is an invaluable medium that allows us to capture the incandescent beauty of the outside world, something many of us haven’t seen in&amp;hellip; well, a hot minute.</description>
+      <guid>http://example.com/blog/long-form-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum.
+Elementum Nisi Quis eleifend quam adipiscing. Aliquet nec ullamcorper sit amet risus. Auctor neque vitae tempus quam pellentesque. Tincidunt lobortis feugiat vivamus at augue.</description>
     </item>
     
     <item>
-      <title>Become a morning person with the help of this a alarm clock</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/post-6/</link>
-      <pubDate>Wed, 03 Feb 2021 16:56:47 +0600</pubDate>
+      <title>Hipster Ipsum</title>
+      <link>http://example.com/blog/hipster-ipsum/</link>
+      <pubDate>Mon, 13 Nov 2017 11:58:39 -0500</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/post-6/</guid>
-      <description>Almost every day for the past nine or so months has felt like March 13, and that can sometimes make it difficult to want to wake up for the day ahead of you.</description>
+      <guid>http://example.com/blog/hipster-ipsum/</guid>
+      <description>Occupy mlkshk kale chips woke, listicle locavore next level fingerstache glossier aesthetic man braid before they sold out kitsch prism. Cred copper mug freegan, flannel YOLO single-origin coffee skateboard artisan four loko church-key man bun. Synth literally gastropub, kombucha chillwave helvetica offal truffaut church-key freegan pop-up gentrify narwhal. Kombucha viral vexillologist green juice. Slow-carb hoodie mumblecore tumeric tattooed meditation, lo-fi fap cred affogato forage whatever austin. Shabby chic direct trade migas, brunch gochujang sriracha chambray fanny pack 8-bit mustache letterpress.</description>
     </item>
     
     <item>
-      <title>Why a balloon is a flexible bag that can be inflated with a gas</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/post-5/</link>
-      <pubDate>Tue, 02 Feb 2021 16:56:47 +0600</pubDate>
+      <title>Startup Ipsum</title>
+      <link>http://example.com/blog/startup-ipsum/</link>
+      <pubDate>Mon, 06 Nov 2017 12:04:06 -0500</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/post-5/</guid>
-      <description>A balloon is a flexible bag that can be inflated with a gas, such as helium, hydrogen, nitrous oxide, oxygen, and air.</description>
+      <guid>http://example.com/blog/startup-ipsum/</guid>
+      <description>SpaceTeam affordances quantitative vs. qualitative SpaceTeam physical computing earned media thinker-maker-doer pair programming. Bootstrapping pitch deck physical computing driven cortado human-centered design innovate human-centered design driven. Grok pitch deck fund pitch deck sticky note affordances minimum viable product integrate paradigm viral iterate. Driven fund thought leader personas workflow SpaceTeam viral pair programming physical computing intuitive 360 campaign latte bootstrapping minimum viable product. Bootstrapping physical computing responsive pitch deck SpaceTeam parallax long shadow pitch deck bootstrapping ideate.</description>
     </item>
     
     <item>
-      <title>Banana is the best meal packages in the UK spark outrage online</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/post-4/</link>
-      <pubDate>Mon, 25 Jan 2021 16:56:47 +0600</pubDate>
+      <title>Coffee Ipsum</title>
+      <link>http://example.com/blog/coffee-ipsum/</link>
+      <pubDate>Wed, 01 Nov 2017 12:04:16 -0500</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/post-4/</guid>
-      <description>A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.</description>
+      <guid>http://example.com/blog/coffee-ipsum/</guid>
+      <description>Aromatic aroma con panna, crema so coffee robust coffee barista, café au lait trifecta that strong blue mountain cortado aftertaste. Aroma extraction french press, skinny sweet, blue mountain cup roast barista, beans, extra cappuccino mug crema strong. Americano caffeine white, con panna saucer sit, con panna eu, carajillo aftertaste kopi-luwak, body aftertaste cup single origin café au lait saucer. Macchiato java sweet arabica, turkish cup, eu flavour mug extraction white cortado saucer est white brewed instant, rich, barista breve cappuccino barista organic.</description>
     </item>
     
     <item>
-      <title>DIY Paper Diamond Tutorial with HUNGRY HEART</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/post-3/</link>
-      <pubDate>Mon, 25 Jan 2021 11:35:57 +0600</pubDate>
+      <title>Undated post</title>
+      <link>http://example.com/blog/no-date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/post-3/</guid>
-      <description>A paper diamond is such a pretty way to bring a flair of stylish luxury to your home.. Ut bibendum lacus vestibulum maximus suscipit.</description>
-    </item>
-    
-    <item>
-      <title>Become a morning person with the help of this a alarm clock</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/post-2/</link>
-      <pubDate>Mon, 25 Jan 2021 11:33:57 +0600</pubDate>
-      
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/post-2/</guid>
-      <description>Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.</description>
-    </item>
-    
-    <item>
-      <title>What you need to know about Photography</title>
-      <link>https://demo.gethugothemes.com/bookworm-light/blog/post-1/</link>
-      <pubDate>Sun, 24 Jan 2021 18:19:25 +0600</pubDate>
-      
-      <guid>https://demo.gethugothemes.com/bookworm-light/blog/post-1/</guid>
-      <description>Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.</description>
+      <guid>http://example.com/blog/no-date/</guid>
+      <description>I was born yesterday, tomorrow.</description>
     </item>
     
   </channel>
