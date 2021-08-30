@@ -2,10 +2,10 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>Tags</title>
+  <title>Search Result</title>
 
   <meta name="author" content="Themefisher">
-  <meta name="description" content="  This is meta description  ">
+  <meta name="description" content=" this is meta description ">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -152,90 +152,47 @@
 </div>
 
   
-  <section class="section-sm pb-2 page-header">
+  
+
+<section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-8 mx-auto text-center">
-
-        
-        
-        <h3 class="mb-3 text-dark font-weight-bold">Tags</h3>
-        
-        
-
-
-        <ul class="list-inline breadcrumb-menu">
-        
-        
-        <li class="list-inline-item"><a href="/bookworm-light">Home</a></li>
-        
-        
-        
-        <li class="list-inline-item">/ &nbsp; <a href="https://demo.gethugothemes.com/bookworm-light/tags">Tags</a></li>
-        
-        
-        
-        
-        
-        
-        </ul>
+      <div class="col-12 mb-5">
+        <div class="title-bordered">
+          <h1 class="h3">Search results for
+            <span class="mark">
+              <script>
+                var keyword = (window.location.search).substr(3);
+                var result = keyword.replace("+", " ");
+                document.write(result);
+              </script>
+            </span>
+          </h1>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-  
-  
-
-<section class="section-sm">
-  <div class="container">
-    <div class="row justify-content-center text-center">
       <div class="col-12">
-        <ul class="list-inline taxonomies-list">
-        
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/alarm/"><i class="las la-tags mr-1"></i> Alarm (2)</a>
-        </li>
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/balloon/"><i class="las la-tags mr-1"></i> Balloon (1)</a>
-        </li>
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/clock/"><i class="las la-tags mr-1"></i> Clock (2)</a>
-        </li>
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/diy/"><i class="las la-tags mr-1"></i> Diy (2)</a>
-        </li>
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/food/"><i class="las la-tags mr-1"></i> Food (1)</a>
-        </li>
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/gas/"><i class="las la-tags mr-1"></i> Gas (1)</a>
-        </li>
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/gold/"><i class="las la-tags mr-1"></i> Gold (1)</a>
-        </li>
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/photography/"><i class="las la-tags mr-1"></i> Photography (2)</a>
-        </li>
-        
-        <li class="list-inline-item mb-1">
-          <a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href="https://demo.gethugothemes.com/bookworm-light/tags/toy/"><i class="las la-tags mr-1"></i> Toy (2)</a>
-        </li>
-        
-        
-        
-        </ul>
+        <div class="row" id="search-results"></div>
+        <div class="row">
+          <script id="search-result-template" type="text/x-js-template">
+            <div class="col-lg-4 col-md-6 mb-4">
+            <article class="card post-card" id="summary-${key}">
+              ${ isset image }<img loading="lazy" class="w-100" src="https://demo.gethugothemes.com/bookworm-light/${image}" alt="${title}">${end}
+              <div class="card-body">
+                <h3 class="h4 mb-4">
+                  <a class="post-title" href="${link}">${title}</a>
+                </h3>
+              </div>
+            </article>
+            </div>
+          </script>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<script>var indexURL = "https://demo.gethugothemes.com/bookworm-light/index.json"</script>
 
 
   <footer class="section-sm">
