@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>【 iOS 】Unable to simultaneously satisfy constraints 約束設定錯誤處理</title>
+
+  <meta name="author" content="Martin Huang">
+  <meta name="description" content=" meta description ">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://martinhuang0933.github.io/images/favicon.png" type="image/x-icon">
+
+  <!-- CSS Plugins -->
+  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&amp;display=swap">
+
+
+
+
+<link rel="stylesheet" href="https://martinhuang0933.github.io/css/vendor.min.f38e7c7e6ab34c94774fb608f1bb6b5912854002ca41fa9c63fd334fcddbd97e26be4783c0f6fd40b8fc78776c7169352bbc43ccfa6f56de22009e059d7401e1.css" integrity="sha512-8458fmqzTJR3T7YI8btrWRKFQALKQfqcY/0zT83b2X4mvkeDwPb9QLj8eHdscWk1K7xDzPpvVt4iAJ4FnXQB4Q==" media="screen">
+
+</head>
+
+<body>
+  
+  <div class="header-height-fix"></div>
+<header class="header-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <a class="navbar-brand font-weight-bold mr-0" href="https://martinhuang0933.github.io/">
+            
+            <img loading="lazy" src="https://martinhuang0933.github.io/images/logo.png" alt="PmThinking產品人-實用工具x高效生活" height="35px">
+            
+          </a>
+
+          
+          <button class="search-toggle d-inline-block d-lg-none ml-auto mr-3" data-toggle="search" aria-label="Search Toggle">
+            <i class="las la-search"></i>
+          </button>
+          
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHeader" aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="d-inline lab la-buromobelexperte"></i>
+            <i class="d-none las la-times"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navHeader">
+            <ul class="navbar-nav mx-auto">
+
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="https://martinhuang0933.github.io/">首頁</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="https://martinhuang0933.github.io/categories/manager/">PM知識</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="https://martinhuang0933.github.io/categories/develope/">程式開發</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="https://martinhuang0933.github.io/categories/develope/">漫漫寫作</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="https://martinhuang0933.github.io/about/">關於</a>
+              </li>
+              
+              
+              
+              
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-block " href="#" role="button" data-toggle="dropdown" aria-expanded="false">更多</a>
+                <ul class="dropdown-menu">
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/blog/">所有文章</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/categories/">分類</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/tags/">標籤</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/contact/">聯絡我</a></li>
+                  
+                  <li><a class="dropdown-item " href="https://martinhuang0933.github.io/elements/">Elements</a></li>
+                  
+                </ul>
+              </li>
+              
+              
+            </ul>
+            
+            
+            <div class="navbar-right d-none d-lg-inline-block">
+              <ul class="social-links list-unstyled list-inline">
+                <li class="list-inline-item ml-4 d-none d-lg-inline-block">
+                  <button class="search-toggle" data-toggle="search" aria-label="Search Toggle">
+                    <i class="las la-search"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="search-block">
+  <div data-toggle="search-close">
+    <i class="las la-times text-primary"></i>
+  </div>
+  <form action="/search">
+    <input id="search-query" name="s" type="search" placeholder="Type words &amp; hit enter" class="text-center" aria-label="search-query">
+  </form>
+</div>
+
+  
+  
+
+
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="text-center mb-5">
+          <h3 class="h2 mb-4 post-title">【 iOS 】Unable to simultaneously satisfy constraints 約束設定錯誤處理</h3>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                
+                <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
+                  <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
+                  <span>Martin Huang</span>
+                </a>
+                
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>22 July 2021</span>
+            </li>
+          </ul>
+        </div>
+
+        
+
+        <div class="content">
+          <p>在iOS開發中，幾乎所有頁面都會使用Autolayout的方式去排版，而在設定完LayoutConstraints後，有時會在Runtime出現一些Error log，雖然不一定會影響顯示出來的排版，但有報錯基本上就要修正。</p>
+<h2 id="error-log">Error Log</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Objective-C" data-lang="Objective-C">[LayoutConstraints] Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints <span style="color:#66d9ef">in</span> the following list is one you don<span style="color:#960050;background-color:#1e0010">&#39;</span>t want. 
+	Try this: 
+		(<span style="color:#ae81ff">1</span>) look at each constraint and try to figure <span style="color:#66d9ef">out</span> which you don<span style="color:#960050;background-color:#1e0010">&#39;</span>t expect; 
+		(<span style="color:#ae81ff">2</span>) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    <span style="color:#e6db74">&#34;&lt;MASLayoutConstraint:0x600000393660 UIButton:0x7fe97b466f20.right == UIView:0x7fe97b458ba0.right - 20&gt;&#34;</span>,
+    <span style="color:#e6db74">&#34;&lt;NSLayoutConstraint:0x6000004f1a90 UIImageView:0x7fe97b4671d0.leading == UIButton:0x7fe97b466f20.trailing + 8&gt;&#34;</span>,
+    <span style="color:#e6db74">&#34;&lt;NSLayoutConstraint:0x6000004f1540 UIView:0x7fe97b458ba0.trailing == UIImageView:0x7fe97b4671d0.trailing + 20&gt;&#34;</span>
+)
+
+Will attempt to recover by breaking constraint 
+<span style="color:#f92672">&lt;</span>NSLayoutConstraint:<span style="color:#ae81ff">0x600001baebc0</span> UIImageView:<span style="color:#ae81ff">0x7fe97b4671d0</span>.leading <span style="color:#f92672">==</span> UIButton:<span style="color:#ae81ff">0x7fe97b466f20</span>.trailing <span style="color:#f92672">+</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">&gt;</span>
+
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this <span style="color:#66d9ef">in</span> the debugger.
+The methods <span style="color:#66d9ef">in</span> the UIConstraintBasedLayoutDebugging category on UIView listed <span style="color:#66d9ef">in</span> <span style="color:#f92672">&lt;</span>UIKitCore<span style="color:#f92672">/</span>UIView.h<span style="color:#f92672">&gt;</span> may also be helpful.
+</code></pre></div><h2 id="什麼情況會出現這個錯誤">什麼情況會出現這個錯誤？</h2>
+<p>一般來說，出現這種警告有兩種情況：</p>
+<ol>
+<li>使用xib的內建View，對其中子元件增加了Autolayout約束，在使用xib後又調整了View的框架</li>
+<li>純Code的方式使用Autolayout，但沒有對使用的<code>ViewAutoresizingMaskIntoConstraints</code>的屬性設置為false。</li>
+</ol>
+<h2 id="如何快速找出有問題的元件">如何快速找出有問題的元件？</h2>
+<p>其實在Error log中有給出很明錯錯誤的地方，那就是在log中<code>Will attempt to recover by breaking constraint</code>的下一行，就是我們要尋找的約束。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Objective-C" data-lang="Objective-C"><span style="color:#75715e">// 關鍵線索
+</span><span style="color:#75715e"></span>Will attempt to recover by breaking constraint 
+<span style="color:#f92672">&lt;</span>NSLayoutConstraint:<span style="color:#ae81ff">0x600001baebc0</span> UIImageView:<span style="color:#ae81ff">0x7fe97b4671d0</span>.leading <span style="color:#f92672">==</span> UIButton:<span style="color:#ae81ff">0x7fe97b466f20</span>.trailing <span style="color:#f92672">+</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">&gt;</span>
+</code></pre></div><p>但初學者在看到這個錯誤時會特別的頭痛，因為在Error log中通常只會寫出哪個元件的類型，例如：NSLayoutConstraint、UIImageView等等，這樣對於比較複雜的頁面會很難找出錯誤的約束。</p>
+<p>Xcode其實提供了一個很方便的Debug功能，可以幫助我們迅速地找到錯誤的約束，而我們要使用的就是Xcode內建的<a href="https://developer.apple.com/library/archive/documentation/ToolsLanguages/Conceptual/Xcode_Overview/ExaminingtheViewHierarchy.html"><strong>Debug View Hierarchy</strong></a>。</p>
+<h2 id="使用debug-view-hierarchy找出元件">使用Debug View Hierarchy找出元件</h2>
+<h3 id="step-1-執行app"><strong>STEP 1：</strong> 執行App</h3>
+<h3 id="step-2-點選-xcode-下方的-debug-view-hierarchy"><strong>STEP 2：</strong> 點選 Xcode 下方的 Debug View Hierarchy</h3>
+<img src="https://i.imgur.com/5er5pnq.png" width="457" height="450">
+<p>這時候你會看到整個App所有View的結構，是不是很方便呢</p>
+<p><img src="https://i.imgur.com/PYieUlW.gif" alt=""></p>
+<h3 id="step-3-找出錯誤約束的實體位址"><strong>STEP 3：</strong> 找出錯誤約束的實體位址</h3>
+<p>還記得剛剛我們有特別找出錯誤的約束嗎？</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Objective-C" data-lang="Objective-C">Will attempt to recover by breaking constraint 
+<span style="color:#75715e">// 我們要的就是NSLayoutConstraint的實體位址0x600001baebc0
+</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;</span>NSLayoutConstraint:<span style="color:#ae81ff">0x600001baebc0</span> 
+UIImageView:<span style="color:#ae81ff">0x7fe97b4671d0</span>.leading <span style="color:#f92672">==</span> UIButton:<span style="color:#ae81ff">0x7fe97b466f20</span>.trailing <span style="color:#f92672">+</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">&gt;</span>
+</code></pre></div><p>而我們要找的就是第3行的部分，將NSLayoutConstraint的實體位址<code>0x600001baebc0</code>複製起來。</p>
+<h3 id="step-4-用實體位址去找出錯誤的約束在哪裡"><strong>STEP 4：</strong> 用實體位址去找出錯誤的約束在哪裡</h3>
+<p>接著我們去左邊Debug navigator搜尋，並以剛剛的<code>0x600001baebc0</code>過濾元件，這時候就可以很快速的找到出錯的約束了。</p>
+<img src="https://i.imgur.com/W9FnCht.png" width="465" height="380">
+<h2 id="總結">總結</h2>
+<p>以前在初學的時候，遇到這個問題總是很頭痛，有一種大海撈針的感覺。<br>
+而現在透過Xcdoe內建的Debug View Hierarchy就可以很快速的找到特定的元件，有時也可以查看UI元件的排版是不是有誤，真的是很方便很多。</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/xcode">Xcode</a></li>
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-fix-layout-constraints%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=%e3%80%90%20iOS%20%e3%80%91Unable%20to%20simultaneously%20satisfy%20constraints%20%e7%b4%84%e6%9d%9f%e8%a8%ad%e5%ae%9a%e9%8c%af%e8%aa%a4%e8%99%95%e7%90%86&amp;url=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-fix-layout-constraints%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-fix-layout-constraints%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=%e3%80%90%20iOS%20%e3%80%91Unable%20to%20simultaneously%20satisfy%20constraints%20%e7%b4%84%e6%9d%9f%e8%a8%ad%e5%ae%9a%e9%8c%af%e8%aa%a4%e8%99%95%e7%90%86&amp;body=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-fix-layout-constraints%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=%e3%80%90%20iOS%20%e3%80%91Unable%20to%20simultaneously%20satisfy%20constraints%20%e7%b4%84%e6%9d%9f%e8%a8%ad%e5%ae%9a%e9%8c%af%e8%aa%a4%e8%99%95%e7%90%86%20https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-fix-layout-constraints%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+            <a href="https://martinhuang0933.github.io/author/martin-huang/"><img loading="lazy" class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang"></a>
+            <div class="media-body">
+              <p class="font-primary mb-1">Written By</p>
+              <h4><a href="https://martinhuang0933.github.io/author/martin-huang/" class="text-dark font-weight-700">Martin Huang</a></h4>
+              <p class="font-primary">Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.</p>
+              <ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2">
+                
+                <li class="list-inline-item"><a href="https://facebook.com">
+                    <i class="lab la-facebook-f"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://twitter.com">
+                    <i class="lab la-twitter"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://linkedin.com">
+                    <i class="lab la-linkedin-in"></i>
+                  </a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        
+        <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
+          
+          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
+          
+          <span>Martin Huang</span>
+        </a>
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>21 Jul, 2021</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/xcode">Xcode</a></li>
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="https://martinhuang0933.github.io/blog/ios-how-to-clean-xocde/">【 iOS 】如何有效地清理 Xcode</a>
+    </h3>
+    <p>大家都知道 Xcode 除了是吃效能的怪獸以外，同時也是很會吃儲存空間的開發工具。
+若一開始再購買 mac 時沒有把硬碟空間買好買滿，那未來在開發時很有可能會遇到空間不足的問題。尤其是在 Xcode 改版時，如果要同時兼容新舊版本，那就會是一件非常痛苦的事。
+以下一些清空間的方法，希望可以幫助到還在 …</p>
+
+    
+  </div>
+</article>
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
+  
+  <div class="card-body">
+    <ul class="card-meta list-inline mb-2">
+      <li class="list-inline-item mb-2">
+        
+        <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
+          
+          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
+          
+          <span>Martin Huang</span>
+        </a>
+        
+      </li>
+      <li class="list-inline-item mb-2">
+        <span>21 Jul, 2021</span>
+      </li>
+      <li class="list-inline-item mb-2">
+        <ul class="card-meta-tag list-inline">
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/design-pattern">Design Pattern</a></li>
+          
+          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+    <h3 class="mb-3">
+      <a class="post-title" href="https://martinhuang0933.github.io/blog/ios-singleton-design-pattern/">【 iOS 】Singleton Design Pattern 單例設計模式</a>
+    </h3>
+    <p>什麼是Singleton？ 在許多物件導向設計的程式語言中，單例設計模式非常常見，而他的實際效益就是可以確保在整個應用程式中只會有一個實體，且生命週期也跟應用程式相同，在應用程式啟動時就會自動幫我們建立了。 在iOS開發學習的過程中也許你已經用了許多Singleton的物件了，只是你還不知道而已，例 …</p>
+
+    
+  </div>
+</article>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-5">
+        
+        
+        
+      </div>
+      <div class="col-lg-12 text-center mt-5">
+        <ul class="list-inline footer-menu mb-4">
+          
+          <li class="list-inline-item mx-3"><a href="https://martinhuang0933.github.io/about/">關於</a></li>
+          
+          <li class="list-inline-item mx-3"><a href="https://martinhuang0933.github.io/categories/">分類</a></li>
+          
+          <li class="list-inline-item mx-3"><a href="https://martinhuang0933.github.io/tags/">標籤</a></li>
+          
+          <li class="list-inline-item mx-3"><a href="https://martinhuang0933.github.io/contact/">聯絡我</a></li>
+          
+        </ul>
+        <ul class="social-links icon-box list-unstyled list-inline font-weight-500 mb-3">
+          
+          <li class="list-inline-item text-center"><a href="https://www.facebook.com/" aria-label="social-icon">
+            <i class="lab lab la-facebook-f"></i>
+          </a></li>
+          
+          <li class="list-inline-item text-center"><a href="https://www.instagram.com/pmthinking/" aria-label="social-icon">
+            <i class="lab lab la-instagram"></i>
+          </a></li>
+          
+          <li class="list-inline-item text-center"><a href="https://www.linkedin.com/" aria-label="social-icon">
+            <i class="lab lab la-linkedin-in"></i>
+          </a></li>
+          
+        </ul>
+        
+        <p class="mb-0 font-weight-500 copyright-text content">Designed &amp; Developed By <a href="https://martinhuang0933.github.io/">Martin Huang</a></p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+<script data-turbolinks-suppress-warning src="/js/vendor.min.104c16bb588dd60f4bc0cbb9828dcf214eb0a6775f69f74f025b75dc5aac73eb47da26aef00c8f4e3d7a85099a8054c195d03d63aa88d1b4213a47274755994e.js" integrity="sha512-EEwWu1iN1g9LwMu5go3PIU6wpndfafdPAlt13Fqsc&#43;tH2iau8AyPTj16hQmagFTBldA9Y6qI0bQhOkcnR1WZTg=="></script>
+
+
+
+</body>
+
+</html>

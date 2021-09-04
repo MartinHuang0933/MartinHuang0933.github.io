@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>develope on PmThinking產品人-實用工具x高效生活</title>
-    <link>https://martinhuang0933.github.io/categories/develope/</link>
+    <link>https://martinhuang0933.github.io/tags/develope/</link>
     <description>Recent content in develope on PmThinking產品人-實用工具x高效生活</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Jul 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/categories/develope/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jul 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/develope/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【 iOS 】Unable to simultaneously satisfy constraints 約束設定錯誤處理</title>
       <link>https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/</link>
@@ -40,34 +40,6 @@ Singleton 會用在哪些場合？ Singleton因為具有唯一性，所以通常
 1. Build App caches 用途： 儲存各App Build的結果，並生成索引
 位置： ~/Library/Developer/Xcode/DerivedData
 刪除方法： 直接刪除 DerivedData 內所有檔案即可</description>
-    </item>
-    
-    <item>
-      <title>【 iOS 】NSString 要使用 copy 還是 strong 呢？</title>
-      <link>https://martinhuang0933.github.io/blog/ios-nsstring-copy-or-strong/</link>
-      <pubDate>Mon, 28 Dec 2020 16:56:47 +0600</pubDate>
-      
-      <guid>https://martinhuang0933.github.io/blog/ios-nsstring-copy-or-strong/</guid>
-      <description>最近在複習 iOS 面試題系列，看到這一題想起幾年前剛接觸 Objective-C ，剛開始觀念還沒有建立起來，也曾經因為這個屬性花了不少時間Debug，雖然現在觀念已經搞懂了，但還是趁這個機會複習筆記一下。
-什麼情況下會有差異？ 你可以先記得，大部分的情況都會使用copy。
-而 copy 與 strong 的差別，在於 copy 是儲存「值」，strong 是儲存「記憶體位址」。
-舉個例子 // .h file @property (strong,nonatomic) NSString *strongStr; @property (copy, nonatomic) NSString *copyStr; // .</description>
-    </item>
-    
-    <item>
-      <title>【 iOS 】資訊安全加固方案 - 程式碼混淆(SwiftShield)</title>
-      <link>https://martinhuang0933.github.io/blog/ios-information-security-swiftshield/</link>
-      <pubDate>Thu, 09 Apr 2020 16:56:47 +0600</pubDate>
-      
-      <guid>https://martinhuang0933.github.io/blog/ios-information-security-swiftshield/</guid>
-      <description>最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
-資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
-為什麼要做程式碼混淆？ 最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
-資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
-.
-如何做到程式碼混淆？ 市面上有許多的混淆工具，有收費的也有開源的，如果只是想試點水溫會建議用開源的工具玩玩看。但如果專案有時程壓力，可以試試付費的工具，畢竟省時省力 😂。
-這邊我列舉出幾個比較常見的開源混淆工具：
-(1) 「rockbruno/SwiftShield」:  這是我比較推薦的一個，效能不錯、評價高、重點是還有在維護。 手動模式（Objective-C、Swift）：採後綴混淆，簡單易用，缺點是有特定後綴的才會混淆，不適合已開發的專案。 自動模式（Swift）：全局混淆，也可以指定特定資料夾不混淆，缺點是有些語法混淆後會出錯，需要手動修復或是修改原本的程式寫法，但錯誤通常不多。  (2) 「LennonChin/Code-Confuse-Plugin」:  僅混淆 Objective-C 項目(.</description>
     </item>
     
   </channel>

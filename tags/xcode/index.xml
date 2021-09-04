@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xcode on PmThinking產品人-實用工具x高效生活</title>
+    <link>https://martinhuang0933.github.io/tags/xcode/</link>
+    <description>Recent content in Xcode on PmThinking產品人-實用工具x高效生活</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 22 Jul 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【 iOS 】Unable to simultaneously satisfy constraints 約束設定錯誤處理</title>
+      <link>https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/</link>
+      <pubDate>Thu, 22 Jul 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/</guid>
+      <description>在iOS開發中，幾乎所有頁面都會使用Autolayout的方式去排版，而在設定完LayoutConstraints後，有時會在Runtime出現一些Error log，雖然不一定會影響顯示出來的排版，但有報錯基本上就要修正。
+Error Log [LayoutConstraints] Unable to simultaneously satisfy constraints. Probably at least one of the constraints in the following list is one you don&amp;#39;t want.</description>
+    </item>
+    
+    <item>
+      <title>【 iOS 】如何有效地清理 Xcode</title>
+      <link>https://martinhuang0933.github.io/blog/ios-how-to-clean-xocde/</link>
+      <pubDate>Wed, 21 Jul 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/ios-how-to-clean-xocde/</guid>
+      <description>大家都知道 Xcode 除了是吃效能的怪獸以外，同時也是很會吃儲存空間的開發工具。
+若一開始再購買 mac 時沒有把硬碟空間買好買滿，那未來在開發時很有可能會遇到空間不足的問題。尤其是在 Xcode 改版時，如果要同時兼容新舊版本，那就會是一件非常痛苦的事。
+以下一些清空間的方法，希望可以幫助到還在苦海的各位 (我也曾經在那片海裡QQ)。
+1. Build App caches 用途： 儲存各App Build的結果，並生成索引
+位置： ~/Library/Developer/Xcode/DerivedData
+刪除方法： 直接刪除 DerivedData 內所有檔案即可</description>
+    </item>
+    
+  </channel>
+</rss>

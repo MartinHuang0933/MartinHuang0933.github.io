@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta name="generator" content="Hugo 0.87.0" />
   <meta charset="utf-8">
-  <title>PmThinking產品人-實用工具x高效生活</title>
+  <title>【 iOS 】如何有效地清理 Xcode</title>
 
   <meta name="author" content="Martin Huang">
-  <meta name="description" content="  This is meta description  ">
+  <meta name="description" content=" meta description ">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -161,56 +160,203 @@
   
   
 
+
+
+
 <section class="section-sm">
   <div class="container">
-    <div class="row no-gutters justify-content-center">
+    <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="row">
-          
-          
-          <div class="col-lg-12">
-            <article class="card post-card">
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
-          
-          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
-          
-          <span>Martin Huang</span>
-        </a>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>22 Jul, 2021</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/xcode">Xcode</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/">【 iOS 】Unable to simultaneously satisfy constraints 約束設定錯誤處理</a>
-    </h3>
-    <p>在iOS開發中，幾乎所有頁面都會使用Autolayout的方式去排版，而在設定完LayoutConstraints後，有時會在Runtime出現一些Error log，雖然不一定會影響顯示出來的排版，但有報錯基本上就要修正。
-Error Log [LayoutConstraints] Unable …</p>
+        <div class="text-center mb-5">
+          <h3 class="h2 mb-4 post-title">【 iOS 】如何有效地清理 Xcode</h3>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                
+                <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
+                  <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
+                  <span>Martin Huang</span>
+                </a>
+                
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>21 July 2021</span>
+            </li>
+          </ul>
+        </div>
 
+        
+
+        <div class="content">
+          <p>大家都知道 Xcode 除了是吃效能的怪獸以外，同時也是很會吃儲存空間的開發工具。</p>
+<p>若一開始再購買 mac 時沒有把硬碟空間買好買滿，那未來在開發時很有可能會遇到空間不足的問題。尤其是在 Xcode 改版時，如果要同時兼容新舊版本，那就會是一件非常痛苦的事。</p>
+<p>以下一些清空間的方法，希望可以幫助到還在苦海的各位 (我也曾經在那片海裡QQ)。</p>
+<h2 id="1-build-app-caches">1. Build App caches</h2>
+<p><strong>用途：</strong> 儲存各App Build的結果，並生成索引<br>
+<strong>位置：</strong> ~/Library/Developer/Xcode/DerivedData<br>
+<strong>刪除方法：</strong> 直接刪除 <code>DerivedData</code> 內所有檔案即可<br>
+<strong>備註：</strong> 對於 <code>DerivedData</code> 有興趣的可以看<a href="https://www.cnblogs.com/zhanggui/p/11171642.html">這裡</a></p>
+<h2 id="2-ios-devicesupport">2. iOS DeviceSupport</h2>
+<p><strong>用途：</strong> 儲存 iOS 的版本<br>
+<strong>位置：</strong> ~/Library/Developer/Xcode/iOS DeviceSupport<br>
+<strong>刪除方法：</strong> 直接刪除iOS版本即可，如<code>14.2 (18B92)</code><br>
+<strong>備註：</strong> 以實機開發時，每一台設備的版本被都會儲存起來，如果你用許多不同的iOS的版本在測試，那使用空間就會很可觀</p>
+<h2 id="3-simulator-devices">3. Simulator devices</h2>
+<p><strong>用途：</strong> 模擬器版本<br>
+<strong>位置：</strong> ~/Library/Developer/CoreSimulator/Devices<br>
+<strong>刪除方法：</strong> 至終端機下指令<code>xcrun simctl delete unavailable</code></p>
+<h2 id="4-archives--ipa-file">4. Archives &amp; .ipa file</h2>
+<p><strong>用途：</strong> 每次打包專案時都會產生，用來提交 App Store 或是TestFlight 等等<br>
+<strong>位置：</strong> ~/Library/Developer/Xcode/Archives<br>
+<strong>刪除方法：</strong> 直接刪除即可<br>
+<strong>備註：</strong> 若為已上線之產品，建議預留最後3-5個的版本</p>
+<h2 id="5-logs">5. Logs</h2>
+<p><strong>用途：</strong> 就，Log<br>
+<strong>位置：</strong> ~/Library/Developer/Xcode/iOS Device Logs<br>
+<strong>刪除方法：</strong> 直接刪除 <code>iOS Device Logs</code> 內所有檔案即可</p>
+<h2 id="6-others-cache">6. Others cache</h2>
+<p><strong>用途：</strong> 整個資源庫的快取<br>
+<strong>位置：</strong> ~/Library/Caches/<br>
+<strong>刪除方法：</strong> 直接刪除 <code>Caches</code> 內所有檔案即可<br>
+<strong>備註：</strong> 若不放心，可以將資料夾移到桌面，再重啟電腦看有沒有異狀。</p>
+<hr>
+<h2 id="工具推薦">工具推薦：</h2>
+<p><a href="https://apps.apple.com/us/app/devcleaner-for-xcode/id1388020431">App DevCleaner for Xcode</a></p>
+<img src="https://i.imgur.com/54qD4vN.png" width="250" height="250">
+<p>非常實用的工具，可以快速清除 DeviceSupport、DerivedData、Archives 等等快取檔案。
+詳細的使用方法可以參考<a href="https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E5%88%AA%E9%99%A4xcode%E4%BD%94%E6%93%9A%E7%A1%AC%E7%A2%9F%E5%A4%A7%E9%87%8F%E7%A9%BA%E9%96%93%E7%9A%84derived-data-190c85eba79">彼得潘的教學</a></p>
+<h2 id="總結">總結：</h2>
+<p>雖然這些肥大的檔案總是讓我們恨得牙癢癢，但不得不說這些檔案確實在編譯階段幫我們省下了不少時間，也是一種用空間換時間的概念。</p>
+<p>剛好遇到問題所以隨筆記錄一下，同時希望這些方法也有幫助到你。</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/xcode">Xcode</a></li>
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
     
-  </div>
-</article>
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-how-to-clean-xocde%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=%e3%80%90%20iOS%20%e3%80%91%e5%a6%82%e4%bd%95%e6%9c%89%e6%95%88%e5%9c%b0%e6%b8%85%e7%90%86%20Xcode&amp;url=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-how-to-clean-xocde%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-how-to-clean-xocde%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=%e3%80%90%20iOS%20%e3%80%91%e5%a6%82%e4%bd%95%e6%9c%89%e6%95%88%e5%9c%b0%e6%b8%85%e7%90%86%20Xcode&amp;body=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-how-to-clean-xocde%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=%e3%80%90%20iOS%20%e3%80%91%e5%a6%82%e4%bd%95%e6%9c%89%e6%95%88%e5%9c%b0%e6%b8%85%e7%90%86%20Xcode%20https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-how-to-clean-xocde%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+            <a href="https://martinhuang0933.github.io/author/martin-huang/"><img loading="lazy" class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang"></a>
+            <div class="media-body">
+              <p class="font-primary mb-1">Written By</p>
+              <h4><a href="https://martinhuang0933.github.io/author/martin-huang/" class="text-dark font-weight-700">Martin Huang</a></h4>
+              <p class="font-primary">Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.</p>
+              <ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2">
+                
+                <li class="list-inline-item"><a href="https://facebook.com">
+                    <i class="lab la-facebook-f"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://twitter.com">
+                    <i class="lab la-twitter"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://linkedin.com">
+                    <i class="lab la-linkedin-in"></i>
+                  </a></li>
+                
+              </ul>
+            </div>
+            
           </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
   
   <div class="card-body">
     <ul class="card-meta list-inline mb-2">
@@ -247,99 +393,10 @@ Error Log [LayoutConstraints] Unable …</p>
     
   </div>
 </article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
-          
-          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
-          
-          <span>Martin Huang</span>
-        </a>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>21 Jul, 2021</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/xcode">Xcode</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="https://martinhuang0933.github.io/blog/ios-how-to-clean-xocde/">【 iOS 】如何有效地清理 Xcode</a>
-    </h3>
-    <p>大家都知道 Xcode 除了是吃效能的怪獸以外，同時也是很會吃儲存空間的開發工具。
-若一開始再購買 mac 時沒有把硬碟空間買好買滿，那未來在開發時很有可能會遇到空間不足的問題。尤其是在 Xcode 改版時，如果要同時兼容新舊版本，那就會是一件非常痛苦的事。
-以下一些清空間的方法，希望可以幫助到還在 …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://martinhuang0933.github.io/blog/self-introduction-method/">
-    <img loading="lazy" class="w-100 rounded" src="https://martinhuang0933.github.io/images/post/20210721.jpg" alt="【職場】自我介紹很尷尬？萬用公式讓人留下好印象">
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
-          
-          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
-          
-          <span>Martin Huang</span>
-        </a>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>21 Jul, 2021</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/pm">PM</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/office">Office</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/introduce">Introduce</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="https://martinhuang0933.github.io/blog/self-introduction-method/">【職場】自我介紹很尷尬？萬用公式讓人留下好印象</a>
-    </h3>
-    <p>近期為求職旺季，很多應屆的畢業生都逐漸的投入職場。
-許多優秀的同學因為沒有入職的經驗，往往不知道第一天會做哪些事情，也不知道要準備些什麼。
-那以產品人自身的經驗來說，除了報到、認識公司環境以外，最重要的就是自我介紹，這是個可以快速建立良好第一印象的機會，為你在職場的人際關係打下基礎。
-教你自我介紹的 …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
   
   <div class="card-body">
     <ul class="card-meta list-inline mb-2">
@@ -378,93 +435,11 @@ Error Log [LayoutConstraints] Unable …</p>
     
   </div>
 </article>
-          </div>
-          
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <nav class="mt-4">
-              <!-- pagination -->
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              <nav class="mb-md-50">
-                <ul class="pagination justify-content-center">
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  <li class="page-item active ">
-                    <a href="/" class="page-link rounded">
-                      1
-                    </a>
-                  </li>
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  <li class="page-item">
-                    <a href="/page/2/" class="page-link rounded">
-                      2
-                    </a>
-                  </li>
-                  
-                  
-                  
-                  
-                  <li class="page-item"><a class="page-link rounded" href="/page/2/" aria-label="Pagination Arrow">
-                    <i class="las la-angle-right"></i>
-                  </a></li>
-                  
-                </ul>
-              </nav>
-              
-            </nav>
+            </div>
+            
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="mb-5 pb-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <p class="font-primary">Our Instagram</p>
-          <h2 class="text-dark font-weight-700"><a href="https://www.instagram.com/pmthinking/">@pmthinking</a></h2>
-        </div>
-      </div>
-      
-      <div class="mt-5">
-        <div id="instafeed" class="instagram_feed rounded row no-gutters justify-content-center" data-accessToken="IGQVJVUEwtVXhJNVRlX2M1QTg5MlRqeUpsUmtVUFpJUDN0cnVSRG5YV2Q2TkpzYzRBb3RYb2E3bDhyb3JuUmxqOXBGY1k0dkdlaGhXQVItYXBLTC1MYUxDSkFya1o1aFBoOEFud2k2RkF6bXdoZAVFMMgZDZD"></div>
-      </div>
-      
     </div>
   </div>
 </section>

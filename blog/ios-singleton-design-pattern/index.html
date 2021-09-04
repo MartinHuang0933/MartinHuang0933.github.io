@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta name="generator" content="Hugo 0.87.0" />
   <meta charset="utf-8">
-  <title>PmThinking產品人-實用工具x高效生活</title>
+  <title>【 iOS 】Singleton Design Pattern 單例設計模式</title>
 
   <meta name="author" content="Martin Huang">
-  <meta name="description" content="  This is meta description  ">
+  <meta name="description" content=" meta description ">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -161,96 +160,203 @@
   
   
 
+
+
+
 <section class="section-sm">
   <div class="container">
-    <div class="row no-gutters justify-content-center">
+    <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="row">
-          
-          
-          <div class="col-lg-12">
-            <article class="card post-card">
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
-          
-          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
-          
-          <span>Martin Huang</span>
-        </a>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>22 Jul, 2021</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/xcode">Xcode</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/">【 iOS 】Unable to simultaneously satisfy constraints 約束設定錯誤處理</a>
-    </h3>
-    <p>在iOS開發中，幾乎所有頁面都會使用Autolayout的方式去排版，而在設定完LayoutConstraints後，有時會在Runtime出現一些Error log，雖然不一定會影響顯示出來的排版，但有報錯基本上就要修正。
-Error Log [LayoutConstraints] Unable …</p>
+        <div class="text-center mb-5">
+          <h3 class="h2 mb-4 post-title">【 iOS 】Singleton Design Pattern 單例設計模式</h3>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="#!" class="card-meta-author">
+                
+                <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
+                  <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
+                  <span>Martin Huang</span>
+                </a>
+                
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>21 July 2021</span>
+            </li>
+          </ul>
+        </div>
 
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
         
-        <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
-          
-          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
-          
-          <span>Martin Huang</span>
-        </a>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>21 Jul, 2021</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/design-pattern">Design Pattern</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="https://martinhuang0933.github.io/blog/ios-singleton-design-pattern/">【 iOS 】Singleton Design Pattern 單例設計模式</a>
-    </h3>
-    <p>什麼是Singleton？ 在許多物件導向設計的程式語言中，單例設計模式非常常見，而他的實際效益就是可以確保在整個應用程式中只會有一個實體，且生命週期也跟應用程式相同，在應用程式啟動時就會自動幫我們建立了。 在iOS開發學習的過程中也許你已經用了許多Singleton的物件了，只是你還不知道而已，例 …</p>
 
+        <div class="content">
+          <h2 id="什麼是singleton">什麼是Singleton？</h2>
+<p>在許多物件導向設計的程式語言中，單例設計模式非常常見，而他的實際效益就是可以確保在整個應用程式中只會有一個實體，且生命週期也跟應用程式相同，在應用程式啟動時就會自動幫我們建立了。
+在iOS開發學習的過程中也許你已經用了許多Singleton的物件了，只是你還不知道而已，例如：UIColor、FileManager等等。</p>
+<h2 id="singleton-會用在哪些場合">Singleton 會用在哪些場合？</h2>
+<p>Singleton因為具有唯一性，所以通常會用於：</p>
+<ol>
+<li>環境變數、已定義的參數檔案</li>
+<li>常用的資料處理算法，如字串轉換、時間轉換、資料庫連接、網路連接等等。</li>
+</ol>
+<h2 id="singleton-怎麼寫">Singleton 怎麼寫？</h2>
+<p>建立Singleton最基礎的寫法就是判斷實體是不是為空值，如果是空值就會直接建立。
+在建立時需要注意執行緒衝突，所以我們需要多加上執行緒的安全機制，實際程式碼如下。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Objective-C" data-lang="Objective-C"><span style="color:#75715e">// Objective-C 版本
+</span><span style="color:#75715e"></span>+ (<span style="color:#66d9ef">instancetype</span>)<span style="color:#a6e22e">shareManager</span>{
+    <span style="color:#66d9ef">@synchronized</span>(self){
+        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>manager) {
+            manager <span style="color:#f92672">=</span> [[self alloc]init];
+        }
+        <span style="color:#66d9ef">return</span> manager;
+    }
+}
+</code></pre></div><p>也可以透過GCD的方式建立</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Objective-C" data-lang="Objective-C"><span style="color:#75715e">// Objective-C 版本 , 使用GCD
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">static</span> DataManager <span style="color:#f92672">*</span>manager <span style="color:#f92672">=</span> nil;
+
+<span style="color:#66d9ef">@implementation</span> <span style="color:#a6e22e">DataManager</span>
+
++ (<span style="color:#66d9ef">instancetype</span>)<span style="color:#a6e22e">shareManager</span>{
+    <span style="color:#66d9ef">static</span> dispatch_once_t onceToken;
+    dispatch_once(<span style="color:#f92672">&amp;</span>onceToken, <span style="color:#f92672">^</span>{
+        manager <span style="color:#f92672">=</span> [[self alloc] init];
+    });
+    <span style="color:#66d9ef">return</span> manager;
+}
+<span style="color:#66d9ef">@end</span>
+</code></pre></div><p>此時Singleton就已經寫好了，只要我們在外面呼叫shareManager這個方法，返回的實體始終是一個，因為dispatch_once只執行一次。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Objective-C" data-lang="Objective-C"><span style="color:#75715e">// Objective-C 版本 , 呼叫 Singleton
+</span><span style="color:#75715e"></span>{
+    [DataManager shareManager];
+}
+</code></pre></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/ios">iOS</a></li>
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/design-pattern">Design Pattern</a></li>
+            
+            <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/develope">develope</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
     
-  </div>
-</article>
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-singleton-design-pattern%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=%e3%80%90%20iOS%20%e3%80%91Singleton%20Design%20Pattern%20%e5%96%ae%e4%be%8b%e8%a8%ad%e8%a8%88%e6%a8%a1%e5%bc%8f&amp;url=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-singleton-design-pattern%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-singleton-design-pattern%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=%e3%80%90%20iOS%20%e3%80%91Singleton%20Design%20Pattern%20%e5%96%ae%e4%be%8b%e8%a8%ad%e8%a8%88%e6%a8%a1%e5%bc%8f&amp;body=https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-singleton-design-pattern%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=%e3%80%90%20iOS%20%e3%80%91Singleton%20Design%20Pattern%20%e5%96%ae%e4%be%8b%e8%a8%ad%e8%a8%88%e6%a8%a1%e5%bc%8f%20https%3a%2f%2fmartinhuang0933.github.io%2fblog%2fios-singleton-design-pattern%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+            <a href="https://martinhuang0933.github.io/author/martin-huang/"><img loading="lazy" class="img-fluid rounded-circle mr-0 mr-sm-4 mb-4" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang"></a>
+            <div class="media-body">
+              <p class="font-primary mb-1">Written By</p>
+              <h4><a href="https://martinhuang0933.github.io/author/martin-huang/" class="text-dark font-weight-700">Martin Huang</a></h4>
+              <p class="font-primary">Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis.</p>
+              <ul class="social-links list-unstyled list-inline ml-0 ml-sm-n2">
+                
+                <li class="list-inline-item"><a href="https://facebook.com">
+                    <i class="lab la-facebook-f"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://twitter.com">
+                    <i class="lab la-twitter"></i>
+                  </a></li>
+                
+                <li class="list-inline-item"><a href="https://linkedin.com">
+                    <i class="lab la-linkedin-in"></i>
+                  </a></li>
+                
+              </ul>
+            </div>
+            
           </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
   
   <div class="card-body">
     <ul class="card-meta list-inline mb-2">
@@ -289,57 +395,10 @@ Error Log [LayoutConstraints] Unable …</p>
     
   </div>
 </article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <a href="https://martinhuang0933.github.io/blog/self-introduction-method/">
-    <img loading="lazy" class="w-100 rounded" src="https://martinhuang0933.github.io/images/post/20210721.jpg" alt="【職場】自我介紹很尷尬？萬用公式讓人留下好印象">
-  </a>
-  
-  <div class="card-body">
-    <ul class="card-meta list-inline mb-2">
-      <li class="list-inline-item mb-2">
-        
-        <a href="https://martinhuang0933.github.io/author/martin-huang/" class="card-meta-author">
-          
-          <img loading="lazy" src="https://martinhuang0933.github.io/images/author/author.jpg" alt="Martin Huang">
-          
-          <span>Martin Huang</span>
-        </a>
-        
-      </li>
-      <li class="list-inline-item mb-2">
-        <span>21 Jul, 2021</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/pm">PM</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/office">Office</a></li>
-          
-          <li class="list-inline-item"><a href="https://martinhuang0933.github.io/tags/introduce">Introduce</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="https://martinhuang0933.github.io/blog/self-introduction-method/">【職場】自我介紹很尷尬？萬用公式讓人留下好印象</a>
-    </h3>
-    <p>近期為求職旺季，很多應屆的畢業生都逐漸的投入職場。
-許多優秀的同學因為沒有入職的經驗，往往不知道第一天會做哪些事情，也不知道要準備些什麼。
-那以產品人自身的經驗來說，除了報到、認識公司環境以外，最重要的就是自我介紹，這是個可以快速建立良好第一印象的機會，為你在職場的人際關係打下基礎。
-教你自我介紹的 …</p>
-
-    
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
   
   <div class="card-body">
     <ul class="card-meta list-inline mb-2">
@@ -378,93 +437,11 @@ Error Log [LayoutConstraints] Unable …</p>
     
   </div>
 </article>
-          </div>
-          
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <nav class="mt-4">
-              <!-- pagination -->
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              <nav class="mb-md-50">
-                <ul class="pagination justify-content-center">
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  <li class="page-item active ">
-                    <a href="/" class="page-link rounded">
-                      1
-                    </a>
-                  </li>
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  <li class="page-item">
-                    <a href="/page/2/" class="page-link rounded">
-                      2
-                    </a>
-                  </li>
-                  
-                  
-                  
-                  
-                  <li class="page-item"><a class="page-link rounded" href="/page/2/" aria-label="Pagination Arrow">
-                    <i class="las la-angle-right"></i>
-                  </a></li>
-                  
-                </ul>
-              </nav>
-              
-            </nav>
+            </div>
+            
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="mb-5 pb-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <p class="font-primary">Our Instagram</p>
-          <h2 class="text-dark font-weight-700"><a href="https://www.instagram.com/pmthinking/">@pmthinking</a></h2>
-        </div>
-      </div>
-      
-      <div class="mt-5">
-        <div id="instafeed" class="instagram_feed rounded row no-gutters justify-content-center" data-accessToken="IGQVJVUEwtVXhJNVRlX2M1QTg5MlRqeUpsUmtVUFpJUDN0cnVSRG5YV2Q2TkpzYzRBb3RYb2E3bDhyb3JuUmxqOXBGY1k0dkdlaGhXQVItYXBLTC1MYUxDSkFya1o1aFBoOEFud2k2RkF6bXdoZAVFMMgZDZD"></div>
-      </div>
-      
     </div>
   </div>
 </section>
