@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Objective-C on PmThinking產品人-實用工具x高效生活</title>
-    <link>https://martinhuang0933.github.io/tags/objective-c/</link>
+    <link>https://martinios.com/tags/objective-c/</link>
     <description>Recent content in Objective-C on PmThinking產品人-實用工具x高效生活</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Dec 2020 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/objective-c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 16:56:47 +0600</lastBuildDate><atom:link href="https://martinios.com/tags/objective-c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【 iOS 】NSString 要使用 copy 還是 strong 呢？</title>
-      <link>https://martinhuang0933.github.io/blog/ios-nsstring-copy-or-strong/</link>
+      <link>https://martinios.com/blog/ios-nsstring-copy-or-strong/</link>
       <pubDate>Mon, 28 Dec 2020 16:56:47 +0600</pubDate>
       
-      <guid>https://martinhuang0933.github.io/blog/ios-nsstring-copy-or-strong/</guid>
+      <guid>https://martinios.com/blog/ios-nsstring-copy-or-strong/</guid>
       <description>最近在複習 iOS 面試題系列，看到這一題想起幾年前剛接觸 Objective-C ，剛開始觀念還沒有建立起來，也曾經因為這個屬性花了不少時間Debug，雖然現在觀念已經搞懂了，但還是趁這個機會複習筆記一下。
 什麼情況下會有差異？ 你可以先記得，大部分的情況都會使用copy。
 而 copy 與 strong 的差別，在於 copy 是儲存「值」，strong 是儲存「記憶體位址」。

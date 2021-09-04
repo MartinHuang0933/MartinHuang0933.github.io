@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on PmThinking產品人-實用工具x高效生活</title>
-    <link>https://martinhuang0933.github.io/tags/security/</link>
+    <link>https://martinios.com/tags/security/</link>
     <description>Recent content in Security on PmThinking產品人-實用工具x高效生活</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Apr 2020 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Apr 2020 16:56:47 +0600</lastBuildDate><atom:link href="https://martinios.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【 iOS 】資訊安全加固方案 - 程式碼混淆(SwiftShield)</title>
-      <link>https://martinhuang0933.github.io/blog/ios-information-security-swiftshield/</link>
+      <link>https://martinios.com/blog/ios-information-security-swiftshield/</link>
       <pubDate>Thu, 09 Apr 2020 16:56:47 +0600</pubDate>
       
-      <guid>https://martinhuang0933.github.io/blog/ios-information-security-swiftshield/</guid>
+      <guid>https://martinios.com/blog/ios-information-security-swiftshield/</guid>
       <description>最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
 資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
 為什麼要做程式碼混淆？ 最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。

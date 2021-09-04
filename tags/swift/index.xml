@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swift on PmThinking產品人-實用工具x高效生活</title>
-    <link>https://martinhuang0933.github.io/tags/swift/</link>
+    <link>https://martinios.com/tags/swift/</link>
     <description>Recent content in Swift on PmThinking產品人-實用工具x高效生活</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Dec 2020 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 16:56:47 +0600</lastBuildDate><atom:link href="https://martinios.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【 iOS 】NSString 要使用 copy 還是 strong 呢？</title>
-      <link>https://martinhuang0933.github.io/blog/ios-nsstring-copy-or-strong/</link>
+      <link>https://martinios.com/blog/ios-nsstring-copy-or-strong/</link>
       <pubDate>Mon, 28 Dec 2020 16:56:47 +0600</pubDate>
       
-      <guid>https://martinhuang0933.github.io/blog/ios-nsstring-copy-or-strong/</guid>
+      <guid>https://martinios.com/blog/ios-nsstring-copy-or-strong/</guid>
       <description>最近在複習 iOS 面試題系列，看到這一題想起幾年前剛接觸 Objective-C ，剛開始觀念還沒有建立起來，也曾經因為這個屬性花了不少時間Debug，雖然現在觀念已經搞懂了，但還是趁這個機會複習筆記一下。
 什麼情況下會有差異？ 你可以先記得，大部分的情況都會使用copy。
 而 copy 與 strong 的差別，在於 copy 是儲存「值」，strong 是儲存「記憶體位址」。
@@ -20,10 +20,10 @@
     
     <item>
       <title>【 iOS 】資訊安全加固方案 - 程式碼混淆(SwiftShield)</title>
-      <link>https://martinhuang0933.github.io/blog/ios-information-security-swiftshield/</link>
+      <link>https://martinios.com/blog/ios-information-security-swiftshield/</link>
       <pubDate>Thu, 09 Apr 2020 16:56:47 +0600</pubDate>
       
-      <guid>https://martinhuang0933.github.io/blog/ios-information-security-swiftshield/</guid>
+      <guid>https://martinios.com/blog/ios-information-security-swiftshield/</guid>
       <description>最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
 資訊安全這門領域其實很深，那既然剛入門我們就從基礎的開始，程式碼混淆在資安方案中算是 CP 值比較高的，開發者混淆時付出一些時間(熟悉以後還可以自動化)，但讓駭客就要多付出好幾倍的時間去破解你的程式，所以在基礎的資安加固方案中會比較推薦程式碼混淆。
 為什麼要做程式碼混淆？ 最近專案接到需求，為了避免程式被反解譯，也避免程式的核心業務邏輯暴露在外，故開始尋找 App 加固的方案。
