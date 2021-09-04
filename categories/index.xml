@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on rrrrrrrrrrrBookworm - Personal Blog Templaterrrr</title>
+    <title>Categories on PmThinking產品人-實用工具x高效生活</title>
     <link>https://martinhuang0933.github.io/categories/</link>
-    <description>Recent content in Categories on rrrrrrrrrrrBookworm - Personal Blog Templaterrrr</description>
+    <description>Recent content in Categories on PmThinking產品人-實用工具x高效生活</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Jul 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Aug 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LifeStyle</title>
+      <link>https://martinhuang0933.github.io/categories/lifestyle/</link>
+      <pubDate>Tue, 31 Aug 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/categories/lifestyle/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Manager</title>
       <link>https://martinhuang0933.github.io/categories/manager/</link>
       <pubDate>Wed, 21 Jul 2021 16:56:47 +0600</pubDate>
       
       <guid>https://martinhuang0933.github.io/categories/manager/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LifeStyle</title>
-      <link>https://martinhuang0933.github.io/categories/lifestyle/</link>
-      <pubDate>Fri, 05 Feb 2021 16:56:47 +0600</pubDate>
-      
-      <guid>https://martinhuang0933.github.io/categories/lifestyle/</guid>
       <description></description>
     </item>
     
