@@ -15,7 +15,7 @@
       <description>最近在複習 iOS 面試題系列，看到這一題想起幾年前剛接觸 Objective-C ，剛開始觀念還沒有建立起來，也曾經因為這個屬性花了不少時間Debug，雖然現在觀念已經搞懂了，但還是趁這個機會複習筆記一下。
 什麼情況下會有差異？ 你可以先記得，大部分的情況都會使用copy。
 而 copy 與 strong 的差別，在於 copy 是儲存「值」，strong 是儲存「記憶體位址」。
-舉個例子 // .h file @property (strong,nonatomic) NSString *strongStr; @property (copy, nonatomic) NSString *copyStr; // .</description>
+舉個例子 // .h file @property (strong,nonatomic) NSString *strongStr; @property (copy, nonatomic) NSString *copyStr; // .m file NSMutableString *mutableStr = [NSMutableString stringWithFormat:@&amp;quot;abc&amp;quot;]; // 將mutableStr賦值給retainStr、copyStr self.</description>
     </item>
     
   </channel>
