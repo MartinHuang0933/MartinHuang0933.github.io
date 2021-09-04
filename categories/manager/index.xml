@@ -5,13 +5,29 @@
     <link>https://martinhuang0933.github.io/categories/manager/</link>
     <description>Recent content in Manager on PmThinking產品人-實用工具x高效生活</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Jul 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/categories/manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/categories/manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【 PM 】產品新手如何分析數據？帶你深入淺出數據知識</title>
+      <link>https://martinhuang0933.github.io/blog/pm-categories-data-analysis/</link>
+      <pubDate>Sun, 01 Aug 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/pm-categories-data-analysis/</guid>
+      <description>許多產品經理每天打開電腦第一件事就是看數據 舉凡流量、用戶成長率以及轉化率等等。 面對這麼多數據，你真的知道數據要怎麼看嗎？
+其實數據種類再多，只要把握好以下三個分類， 你就可以精準掌握到數據背後的意義。
+1️⃣ 業務數據
+舉例：現金流、轉化率、用戶留存率、活躍度等等。
+這些數據非常重要，因為日常的工作都是為了提升這些核心指標。 例如公司季目標是提升訂單成交率，那轉化率就是核心， 接著會開始分析成交訂單前哪些功能是必要路徑，思考如何讓用戶更方便的下訂單。
+2️⃣ 用戶背景數據
+舉例：用戶性別、地區、興趣標籤等等
+我們可以透過用戶背景與行為數據去尋找它跟業務指標的關聯性。 例如我們產品的主要市場是 25 歲到 35 歲的職場女性， 對新品與優惠商品的購買力較強，也許可以透過限時限量的優惠促銷來刺激訂單。</description>
+    </item>
+    
     <item>
       <title>【職場】自我介紹很尷尬？萬用公式讓人留下好印象</title>
-      <link>https://martinhuang0933.github.io/blog/self-introduction-method/</link>
+      <link>https://martinhuang0933.github.io/blog/business-self-introduction-method/</link>
       <pubDate>Wed, 21 Jul 2021 16:56:47 +0600</pubDate>
       
-      <guid>https://martinhuang0933.github.io/blog/self-introduction-method/</guid>
+      <guid>https://martinhuang0933.github.io/blog/business-self-introduction-method/</guid>
       <description>近期為求職旺季，很多應屆的畢業生都逐漸的投入職場。
 許多優秀的同學因為沒有入職的經驗，往往不知道第一天會做哪些事情，也不知道要準備些什麼。
 那以產品人自身的經驗來說，除了報到、認識公司環境以外，最重要的就是自我介紹，這是個可以快速建立良好第一印象的機會，為你在職場的人際關係打下基礎。
@@ -23,6 +39,69 @@
 如果是參加社交活動，可以說我在哪裡得知這個活動，來這裡是想跟大家交流什麼話題等。
 這個環節也是讓大家初步認識你，可以簡單敘述，但下一點才是比較重要的。
 📌 我能帶來什麼價值： 這一點比較關鍵，如果可以與「我是誰」呼應的話是最好的。</description>
+    </item>
+    
+    <item>
+      <title>【職場】展現三大能力，大幅提高面試成功率</title>
+      <link>https://martinhuang0933.github.io/blog/business-interview-skills/</link>
+      <pubDate>Mon, 05 Jul 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/business-interview-skills/</guid>
+      <description>最近到了畢業季，是一年一度校園招募的季節。 剛畢業對於職場還很陌生的你，準備好要如何跟面試官應對了嗎？ 如果你正在準備面試，那這篇文章正是你最需要的！
+面試除了是展現自己最好的一面以外，更是要傳達面試官想看到部分， 讓面試官覺得自己就是最適合這個職缺的應聘者。 以下這三個能力，就是面試官最看重的部分：
+1️⃣ 專業能力
+面試官看你是否具備這個職位所要求的專業能力， 例如你有沒有這個職缺相關的相關工作經驗或是實習經驗， 能證明你對這個領域熟悉，並且有實際參與執行過。
+2️⃣ 個人能力
+個人能力是指一個人的邏輯思維、溝通管理、表達能力、抗壓度等等。 目的是要看你是不是一個做事有方法、有邏輯，且具備溝通能力可以協調任務的人 團隊是人與人之間的合作，並不是獨自完成工作就好。
+3️⃣ 未來潛力
+潛力就是你跟公司可以一同成長多久，是不是可以長期合作的夥伴。 例如職業規劃是如何？以及如何看待這個行業？你為什麼加入我們公司？ 這些觀點都是想理解你對於工作、產業、職涯的看法。</description>
+    </item>
+    
+    <item>
+      <title>【 PM 】專案常常 Delay？四個法則帶你拆解工作項目！</title>
+      <link>https://martinhuang0933.github.io/blog/pm-work-breakdown-structure/</link>
+      <pubDate>Sun, 04 Jul 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/pm-work-breakdown-structure/</guid>
+      <description>又到了專案要驗收進度的時候了， 你是屬於還是最後一刻還在趕工？還是進度早已按計劃完成？ 如果你是前者，那你一定要學習拆解工作項目的四個法則！
+在專案管理技巧中，有一個專業知識叫工作分解結構 WBS (Work Breakdown Structure)，這個步驟就是要把專案所有必要的工作找出來，並且根據類別區分，做為定義完整專案工作的依據。
+例如：我在舉辦講座時，會把每個時段、每個組別、每個事務都明確列出來，列出來以後我才可以預估要去搜集哪些資源、要去協調哪些人、要準備與產出哪些事務，這個流程表出來以後，我就知道要如何分配工作事項了。
+當你把事情分類出來以後，一定會遇到一個問題，那就是工作項目可能需要好幾個工作日來完成。 例如：需要五天開發，如果你就老實的安排五天，那假設到了第四天你去詢問進度時，才發現負責人只完成 30%，那就會出現了專案進度 Delay 的情況，這時候整個專案的壓力就會提高。
+那要如何才能有效地規劃工作時程呢？不會切的太粗糙，也不會切得太瑣碎。 教你四個法則，讓你順利掌握工作進度。
+1️⃣ 盡可能的拆細，工作項目越細越準（消除不確定性）
+這個可以依照你對專案的把握度進行調整。 如果你對專案把握度低，可以盡可能的拆分工作項目，你對整個全貌越清楚，對時間掌握越準。</description>
+    </item>
+    
+    <item>
+      <title>【 PM 】為什麼產品優化了，客戶卻沒有更滿意？</title>
+      <link>https://martinhuang0933.github.io/blog/pm-kano/</link>
+      <pubDate>Tue, 15 Jun 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/pm-kano/</guid>
+      <description>身為產品經理，對產品有無限多個優化的點子 但要如何挑選出可以帶來最大效益的優化方案呢？
+這次要介紹的是日本東京理工大學教授狩野紀昭(Noriaki Kano)在1984年提出的「二維品質模式」，也稱為狩野模型，將功能需求的品質與滿意度畫在二維座標軸上，以四個象限來分析需求可以帶來的效益。
+基本需求型：圖中的綠線，是客戶眼中的基本功能，做得好不會加分，但做不好可是會大大扣分的，例如：外賣平台的購買與結帳付款流程。
+期望型：圖中的藍線，這類需求會隨著品質的提升，讓客戶滿意度也提升，例如：外賣平台可點餐的餐廳數量越多越好，餐點價格越划算客戶就會越滿意。
+魅力型：圖中的紅線，這類需求是屬於客戶沒有預期的功能，但品質來到一定程度以後，會讓客戶覺得驚艷，對產品、品牌感到加分，例如有些 Uber 司機會在車上提供空氣除菌機、消毒酒精，這些屬於非必要的額外服務，但會讓你感到加分。
+無差異型：圖中的灰色區域，這類需求無論品質好壞，使用者都不會太大的感覺，例如：吃速食或是夜市的時候，餐點的擺盤與精緻度可能就不會是重點，就算花了許多心思，用戶也不一定能有明顯的感受。
+總結「狩野模型」的三大重點，幫助我們判斷需求的優先級：
+ 先滿足基本需求型的功能，讓產品可以正常運作，先求有再求好。 靠期望型的需求不斷優化產品，同時你也可以感受到產品持續進步。 靠魅力型的需求來讓產品加分，這樣才有辦法做出口碑，打開知名度與客群。  ✨ 追蹤產品人 @，讓我陪你一起成長
+✨ 你認為優秀的產品經理是什麼模樣呢？ 歡迎留言跟我說！</description>
+    </item>
+    
+    <item>
+      <title>【PM】成為優秀產品經理的三個要素</title>
+      <link>https://martinhuang0933.github.io/blog/pm-key-skills/</link>
+      <pubDate>Sat, 05 Jun 2021 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/pm-key-skills/</guid>
+      <description>在產品經理的成長道路上，總是有許多知識要學 而哪些觀念造就了產品經理的差異呢？
+以下總結三點常見的觀念，讓你成為優秀的產品經理
+  你不一定需要真的把產品做出來
+但你一定要知道產品怎麼做。    你不一定要取得所有數據，
+但要知道遇到問題該看哪些數據。
+  具有全局觀，瞭解每個需求背後的意義
+  ✨ 追蹤產品人 @，讓我陪你一起成長</description>
     </item>
     
   </channel>

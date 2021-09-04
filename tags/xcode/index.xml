@@ -5,21 +5,23 @@
     <link>https://martinhuang0933.github.io/tags/xcode/</link>
     <description>Recent content in Xcode on PmThinking產品人-實用工具x高效生活</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Jul 2021 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 16:56:47 +0600</lastBuildDate><atom:link href="https://martinhuang0933.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>【 iOS 】Unable to simultaneously satisfy constraints 約束設定錯誤處理</title>
-      <link>https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/</link>
-      <pubDate>Thu, 22 Jul 2021 16:56:47 +0600</pubDate>
+      <title>【 Mac 】解決 Touch Bar 失效問題</title>
+      <link>https://martinhuang0933.github.io/blog/mac-fix-touchbar/</link>
+      <pubDate>Fri, 04 Dec 2020 16:56:47 +0600</pubDate>
       
-      <guid>https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/</guid>
-      <description>在iOS開發中，幾乎所有頁面都會使用Autolayout的方式去排版，而在設定完LayoutConstraints後，有時會在Runtime出現一些Error log，雖然不一定會影響顯示出來的排版，但有報錯基本上就要修正。
-Error Log [LayoutConstraints] Unable to simultaneously satisfy constraints. Probably at least one of the constraints in the following list is one you don&amp;#39;t want.</description>
+      <guid>https://martinhuang0933.github.io/blog/mac-fix-touchbar/</guid>
+      <description>自從蘋果在 2016 年在 Macbook 新增 TouchBar 之後，Macbook的使用上又多了一種方式。
+但有時候在使用上會遇到一些奇怪的Bug，舉凡 TouchBar 失靈、Esc消失等等，在這裡我記錄了一些解決的方式。
+最快解決方案 - 指令 基本上最快的方式就是去終端機下指令，直接由指令重啟 TouchBar 。
+&amp;gt; killall ControlStrip  但後來我覺得要記得指令實在是有點違反人性，因為不是每天都會發生失靈的狀況。</description>
     </item>
     
     <item>
       <title>【 iOS 】如何有效地清理 Xcode</title>
       <link>https://martinhuang0933.github.io/blog/ios-how-to-clean-xocde/</link>
-      <pubDate>Wed, 21 Jul 2021 16:56:47 +0600</pubDate>
+      <pubDate>Wed, 02 Dec 2020 16:56:47 +0600</pubDate>
       
       <guid>https://martinhuang0933.github.io/blog/ios-how-to-clean-xocde/</guid>
       <description>大家都知道 Xcode 除了是吃效能的怪獸以外，同時也是很會吃儲存空間的開發工具。
@@ -28,6 +30,31 @@ Error Log [LayoutConstraints] Unable to simultaneously satisfy constraints. Prob
 1. Build App caches 用途： 儲存各App Build的結果，並生成索引
 位置： ~/Library/Developer/Xcode/DerivedData
 刪除方法： 直接刪除 DerivedData 內所有檔案即可</description>
+    </item>
+    
+    <item>
+      <title>【 iOS 】Unable to simultaneously satisfy constraints 約束設定錯誤處理</title>
+      <link>https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/</link>
+      <pubDate>Sat, 07 Nov 2020 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/ios-fix-layout-constraints/</guid>
+      <description>在iOS開發中，幾乎所有頁面都會使用Autolayout的方式去排版，而在設定完LayoutConstraints後，有時會在Runtime出現一些Error log，雖然不一定會影響顯示出來的排版，但有報錯基本上就要修正。
+Error Log [LayoutConstraints] Unable to simultaneously satisfy constraints. Probably at least one of the constraints in the following list is one you don&amp;#39;t want.</description>
+    </item>
+    
+    <item>
+      <title>【書摘】選 3 哲學 - 不平衡才能真正的平衡</title>
+      <link>https://martinhuang0933.github.io/blog/read-pick-three/</link>
+      <pubDate>Sat, 09 May 2020 16:56:47 +0600</pubDate>
+      
+      <guid>https://martinhuang0933.github.io/blog/read-pick-three/</guid>
+      <description>有好多事想做，為什麼時間總是不夠？ 有多少人跟曾經的我一樣，工作與生活總是達不到平衡，朝九晚九的工作、長年被犧牲的睡眠、偶爾才回一次的老家、總是明天才開始的運動計劃。
+想做的事太多，每一樣都做一點，但每一樣都沒有辦法好好完成，如果你也是這樣，那推薦你看這本書，也許你會得到一些平衡工作與生活的啟發。
+什麼是「選三哲學」？ 其實這個概念非常簡單，就是要先理解在一天24小時內基本上是無法兼顧所有事情的。 所以作者 蘭蒂．祖克柏（Randi Zuckerberg）把生活分成五類，在這五類中每天只選擇三項，並好好的完成。
+那這五類分別為：工作、睡眠、家庭、運動、朋友。 作者對於每一大分類都有屬於自己的小項目，例如因為興趣而培養出來的副業，也算是在工作的範疇之中，所以我認為每一大分類的小項目都是可以由自己去歸類的。
+就只選三項，並且全力以赴 我認為本書的精神除了適度分配每天執行的資源以外，更大的重點是在「全力以赴」。
+為什麼會這樣說呢？ 因為只選擇了三項，在精力及資源變多情況下，可以更充分的把精力專注在目標之中，並做得更好。 所以當每天選定三項後，保持專注在所選的項目中，專注並發揮自己 100% 的能力，會有超乎想像的成果。 別擔心剩下沒選的兩項，因為沒選到的項目，明天、後天或是下個月，如果平衡分配，一定會選到的。
+挑戰看看，並且紀錄 推薦一位作家叫梅塔Mata。 她曾說過如果看完一本書，但卻沒有把書實作在生活中，那這本書等於是白看了。 不只是要理解書中的好觀念，更要透過實作改變已經僵化的生活模式，這樣才能逐漸提升自我。</description>
     </item>
     
   </channel>
