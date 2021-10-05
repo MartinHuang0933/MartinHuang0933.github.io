@@ -14,11 +14,7 @@
       <guid>https://martinios.com/blog/mac-fix-touchbar/</guid>
       <description>自從蘋果在 2016 年在 Macbook 新增 TouchBar 之後，Macbook的使用上又多了一種方式。
 但有時候在使用上會遇到一些奇怪的Bug，舉凡 TouchBar 失靈、Esc消失等等，在這裡我記錄了一些解決的方式。
-最快解決方案 - 指令 基本上最快的方式就是去終端機下指令，直接由指令重啟 TouchBar 。
-&amp;gt; killall ControlStrip  但後來我覺得要記得指令實在是有點違反人性，因為不是每天都會發生失靈的狀況。
-所以我把指令包成 command file，只要連點兩下就可以執行了。
-下載連結
-有需要的可以下載使用。</description>
+最快解決方案 - 指令 基本上最快的方式就是去終端機下指令，直接由指令重啟 TouchBar 。</description>
     </item>
     
     <item>
@@ -30,11 +26,7 @@
       <description>大家都知道 Xcode 除了是吃效能的怪獸以外，同時也是很會吃儲存空間的開發工具。
 若一開始再購買 mac 時沒有把硬碟空間買好買滿，那未來在開發時很有可能會遇到空間不足的問題。尤其是在 Xcode 改版時，如果要同時兼容新舊版本，那就會是一件非常痛苦的事。
 以下一些清空間的方法，希望可以幫助到還在苦海的各位 (我也曾經在那片海裡QQ)。
-1. Build App caches 用途： 儲存各App Build的結果，並生成索引
-位置： ~/Library/Developer/Xcode/DerivedData
-刪除方法： 直接刪除 DerivedData 內所有檔案即可
-備註： 對於 DerivedData 有興趣的可以看這裡
-2. iOS DeviceSupport 用途： 儲存 iOS 的版本</description>
+1. Build App caches 用途： 儲存各App Build的結果，並生成索引</description>
     </item>
     
     <item>
@@ -44,7 +36,7 @@
       
       <guid>https://martinios.com/blog/ios-fix-layout-constraints/</guid>
       <description>在iOS開發中，幾乎所有頁面都會使用Autolayout的方式去排版，而在設定完LayoutConstraints後，有時會在Runtime出現一些Error log，雖然不一定會影響顯示出來的排版，但有報錯基本上就要修正。
-Error Log [LayoutConstraints] Unable to simultaneously satisfy constraints. Probably at least one of the constraints in the following list is one you don&amp;#39;t want. Try this: (1) look at each constraint and try to figure out which you don&amp;#39;t expect; (2) find the code that added the unwanted constraint or constraints and fix it.</description>
+Error Log [LayoutConstraints] Unable to simultaneously satisfy constraints. Probably at least one of the constraints in the following list is one you don&amp;#39;t want.</description>
     </item>
     
     <item>
@@ -56,7 +48,7 @@ Error Log [LayoutConstraints] Unable to simultaneously satisfy constraints. Prob
       <description>什麼是Singleton？ 在許多物件導向設計的程式語言中，單例設計模式非常常見，而他的實際效益就是可以確保在整個應用程式中只會有一個實體，且生命週期也跟應用程式相同，在應用程式啟動時就會自動幫我們建立了。 在iOS開發學習的過程中也許你已經用了許多Singleton的物件了，只是你還不知道而已，例如：UIColor、FileManager等等。
 Singleton 會用在哪些場合？ Singleton因為具有唯一性，所以通常會用於：
  環境變數、已定義的參數檔案 常用的資料處理算法，如字串轉換、時間轉換、資料庫連接、網路連接等等。  Singleton 怎麼寫？ 建立Singleton最基礎的寫法就是判斷實體是不是為空值，如果是空值就會直接建立。 在建立時需要注意執行緒衝突，所以我們需要多加上執行緒的安全機制，實際程式碼如下。
-// Objective-C 版本 + (instancetype)shareManager{ @synchronized(self){ if (!manager) { manager = [[self alloc]init]; } return manager; } } 也可以透過GCD的方式建立</description>
+// Objective-C 版本 + (instancetype)shareManager{ @synchronized(self){ if (!</description>
     </item>
     
     <item>
@@ -70,10 +62,7 @@ Singleton 會用在哪些場合？ Singleton因為具有唯一性，所以通常
 什麼是「選三哲學」？ 其實這個概念非常簡單，就是要先理解在一天24小時內基本上是無法兼顧所有事情的。 所以作者 蘭蒂．祖克柏（Randi Zuckerberg）把生活分成五類，在這五類中每天只選擇三項，並好好的完成。
 那這五類分別為：工作、睡眠、家庭、運動、朋友。 作者對於每一大分類都有屬於自己的小項目，例如因為興趣而培養出來的副業，也算是在工作的範疇之中，所以我認為每一大分類的小項目都是可以由自己去歸類的。
 就只選三項，並且全力以赴 我認為本書的精神除了適度分配每天執行的資源以外，更大的重點是在「全力以赴」。
-為什麼會這樣說呢？ 因為只選擇了三項，在精力及資源變多情況下，可以更充分的把精力專注在目標之中，並做得更好。 所以當每天選定三項後，保持專注在所選的項目中，專注並發揮自己 100% 的能力，會有超乎想像的成果。 別擔心剩下沒選的兩項，因為沒選到的項目，明天、後天或是下個月，如果平衡分配，一定會選到的。
-挑戰看看，並且紀錄 推薦一位作家叫梅塔Mata。 她曾說過如果看完一本書，但卻沒有把書實作在生活中，那這本書等於是白看了。 不只是要理解書中的好觀念，更要透過實作改變已經僵化的生活模式，這樣才能逐漸提升自我。
-儘管只挑選三項有時候是很困難的，但請好好保持，並且搭配紀錄，實作1-2個月後你可以回頭審視你的時間分配是不是有失衡。 這一點跟記帳很像，唯有透過紀錄並反思自己的資源分配時，才會知道要如何改善自己的行為。
-總結  理解資源是有限的，你無法同時兼顧所有事物，但可以透過分配達到平衡。 每天只選擇三項，並盡全力達到目標，甚至做得更好。 持續記錄自己的選擇，一段時間後反思是否有失衡或是可以調整的部分。  </description>
+為什麼會這樣說呢？ 因為只選擇了三項，在精力及資源變多情況下，可以更充分的把精力專注在目標之中，並做得更好。 所以當每天選定三項後，保持專注在所選的項目中，專注並發揮自己 100% 的能力，會有超乎想像的成果。 別擔心剩下沒選的兩項，因為沒選到的項目，明天、後天或是下個月，如果平衡分配，一定會選到的。</description>
     </item>
     
     <item>
@@ -87,10 +76,7 @@ Singleton 會用在哪些場合？ Singleton因為具有唯一性，所以通常
 什麼是「選三哲學」？ 其實這個概念非常簡單，就是要先理解在一天24小時內基本上是無法兼顧所有事情的。 所以作者 蘭蒂．祖克柏（Randi Zuckerberg）把生活分成五類，在這五類中每天只選擇三項，並好好的完成。
 那這五類分別為：工作、睡眠、家庭、運動、朋友。 作者對於每一大分類都有屬於自己的小項目，例如因為興趣而培養出來的副業，也算是在工作的範疇之中，所以我認為每一大分類的小項目都是可以由自己去歸類的。
 就只選三項，並且全力以赴 我認為本書的精神除了適度分配每天執行的資源以外，更大的重點是在「全力以赴」。
-為什麼會這樣說呢？ 因為只選擇了三項，在精力及資源變多情況下，可以更充分的把精力專注在目標之中，並做得更好。 所以當每天選定三項後，保持專注在所選的項目中，專注並發揮自己 100% 的能力，會有超乎想像的成果。 別擔心剩下沒選的兩項，因為沒選到的項目，明天、後天或是下個月，如果平衡分配，一定會選到的。
-挑戰看看，並且紀錄 推薦一位作家叫梅塔Mata。 她曾說過如果看完一本書，但卻沒有把書實作在生活中，那這本書等於是白看了。 不只是要理解書中的好觀念，更要透過實作改變已經僵化的生活模式，這樣才能逐漸提升自我。
-儘管只挑選三項有時候是很困難的，但請好好保持，並且搭配紀錄，實作1-2個月後你可以回頭審視你的時間分配是不是有失衡。 這一點跟記帳很像，唯有透過紀錄並反思自己的資源分配時，才會知道要如何改善自己的行為。
-總結  理解資源是有限的，你無法同時兼顧所有事物，但可以透過分配達到平衡。 每天只選擇三項，並盡全力達到目標，甚至做得更好。 持續記錄自己的選擇，一段時間後反思是否有失衡或是可以調整的部分。  </description>
+為什麼會這樣說呢？ 因為只選擇了三項，在精力及資源變多情況下，可以更充分的把精力專注在目標之中，並做得更好。 所以當每天選定三項後，保持專注在所選的項目中，專注並發揮自己 100% 的能力，會有超乎想像的成果。 別擔心剩下沒選的兩項，因為沒選到的項目，明天、後天或是下個月，如果平衡分配，一定會選到的。</description>
     </item>
     
   </channel>
